@@ -1,0 +1,63 @@
+
+body {
+    background-color: #68CDD5;
+    font-size: 62.5%;
+}
+
+.box1 {
+    margin: 1.5rem;
+    float: left;
+}
+
+.box2 {
+    padding-top: 6rem;
+    text-align: center;
+}
+
+.box3 {
+    margin: 12rem 3rem;
+}
+
+.box4 {
+    padding: 0rem 0rem 5rem 4rem;
+    float: left;
+    text-align: center
+}
+
+.box5 {
+    padding: 0rem 4rem 5rem;
+    float: right;
+    text-align: center
+}
+
+p {
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+}
+
+.aa {
+    color: #fff;
+}
+
+.bb {
+    color: #fff;
+}
+
+.Return {
+    width: 27px;
+    height: 27px;
+}
+
+.Title {
+    width: 91px;
+    height: 35px;
+}
+
+.Group {
+    width: 42px;
+}
+
+.Grape {
+    width: 42px;
+}
