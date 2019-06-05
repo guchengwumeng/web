@@ -1,0 +1,120 @@
+body {
+    margin: 0px;
+    background-color: #EFF0F4;
+}
+
+/*清除可视页面外边距，设置可视页面颜色*/
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: #5FC0CD;
+    margin: 0px;
+}
+
+/*设置头部盒子宽高·颜色·清除外边距*/
+.close {
+    position: relative;
+    top: 20px;
+    left: 16px;
+    color: #fff;
+    font-size: 15px;
+    float: left;
+}
+
+/*设置位置属性为相对定位·字体颜色·字体大小·向左浮动*/
+.landing {
+    position: relative;
+    top: 18px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+/*设置文本为绝对居中*/
+.registration {
+    position: relative;
+    bottom: 4px;
+    right: 16px;
+    color: #fff;
+    font-size: 15px;
+    float: right;
+}
+
+/*设置为向右浮动*/
+.accountnumber {
+    margin-top: 10px;
+    background-color: #ffffff;
+    width: 100%;
+    height: 50px;
+}
+
+/*图片盒子1设置了上外边距·盒子宽高*/
+.pictures1 {
+    position: relative;
+    top: 15px;
+    left: 23px;
+}
+
+.box1 {
+    height: 16px;
+    padding: 5px 0px 5px 17px;
+    position: relative;
+    top: 10px;
+    left: 50px;
+    border:0px;
+    border-left:1px solid #E1E5E7;
+   }
+
+
+/*设置了图片1位置属性为相对定位*/
+.password {
+    margin-top: 10px;
+    background-color: #ffffff;
+    widows: 100%;
+    height: 50px;
+}
+
+/*图片2盒子*/
+.pictures2 {
+    position: relative;
+    top: 15px;
+    left: 22px;
+}
+
+/*图片2*/
+.Bottom {
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    background-color: #5FC0CD;
+    
+}
+
+.box2 {
+    padding: 5px 0px 5px 16px;
+    position: relative;
+    top: 10px;
+    left: 50px;
+    border: 0px;
+    border-left:1px solid #E1E5E7;
+}
+/*设置密码输入框左边框宽度样式颜色*/
+::-webkit-input-placeholder {
+    color:#E1E5E7;
+  }
+  /*设置所有placeholder的文本颜色*/
+.text {
+    position: relative;
+    top: 18px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.link {
+    position: relative;
+    top: 10px;
+    right: 17px;
+    color: #5FC0CD;
+    float: right;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" content="user-scalable=no" />
+    <!--进行视口布局，视口宽度等于设备宽度，设置为不允许通过手势对页面缩放-->
+    <title>task4</title>
+    <!--网页标题-->
+    <link rel="stylesheet" type="text/css" href="../css/task4.css">
+    <!--声明css为外联，引用外联css文件-->
+</head>
+<body>
+    <!--头部盒子-->
+    <div class="header">
+        <div class="close">关闭</div>
+        <div class="landing">登陆</div>
+        <div class="registration">注册</div>
+    </div>
+    <!--图片1盒子，type定义为文本输入框，-->
+    <div class="accountnumber">
+        <img src="../picture/1.png" class="pictures1"/><input class="box1" type="text" oninput = "value=value.replace(/[^\d]/g,'')" placeholder="请输入手机号"maxlength="11"style="outline:none;" />      
+        
+    </div>
+    <!--图片盒子2,src引用图片，给input元素插入值,type定义为密码输入框，placeholder描述输入域所期待的值,maxlength限定可输入字符为11位，style去除获取焦点时的边框-->
+    <div class="password">
+        <img src="../picture/2.png" class="pictures2"/><input class="box2" type="password"  placeholder="请输入密码" maxlength="11"style="outline:none;"/>
+    </div>
+    <!--底部盒子-->
+    <div class="Bottom"><div class="text">登陆</div></div>
+
+    <div class="link"><ins>忘记密码</ins></div>
+
+</body>
+
+</html>
