@@ -55,18 +55,20 @@ body {
     left: 23px;
 }
 
+/*设置图片1位置属性相对定位，相对于父元素上左偏移*/
 .box1 {
     height: 16px;
     padding: 5px 0px 5px 17px;
     position: relative;
     top: 10px;
     left: 50px;
-    border:0px;
-    border-left:1px solid #E1E5E7;
-   }
+    border: 0px;
+    border-left: 1px solid #E1E5E7;
+}
+
+/*设置文本输入框高度内边距，位置属性相对定位，清除边框，边框样式*/
 
 
-/*设置了图片1位置属性为相对定位*/
 .password {
     margin-top: 10px;
     background-color: #ffffff;
@@ -74,21 +76,15 @@ body {
     height: 50px;
 }
 
-/*图片2盒子*/
+/*图片2盒子设置了外边距，颜色属性，宽高*/
 .pictures2 {
     position: relative;
     top: 15px;
     left: 22px;
 }
 
-/*图片2*/
-.Bottom {
-    width: 100%;
-    height: 60px;
-    margin-top: 10px;
-    background-color: #5FC0CD;
-    
-}
+/*图片2设为相对定位，相对于父元素上左偏移*/
+
 
 .box2 {
     padding: 5px 0px 5px 16px;
@@ -96,13 +92,23 @@ body {
     top: 10px;
     left: 50px;
     border: 0px;
-    border-left:1px solid #E1E5E7;
+    border-left: 1px solid #E1E5E7;
 }
-/*设置密码输入框左边框宽度样式颜色*/
+
+/*设置密码输入框内边距，相对定位，清除边框，左边框宽度样式颜色*/
 ::-webkit-input-placeholder {
-    color:#E1E5E7;
-  }
-  /*设置所有placeholder的文本颜色*/
+    color: #E1E5E7;
+}
+
+/*设置所有placeholder的文本颜色*/
+.Bottom {
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    background-color: #5FC0CD;
+
+}
+/*设置底部边框宽高，上外边距，背景颜色*/
 .text {
     position: relative;
     top: 18px;
@@ -110,7 +116,7 @@ body {
     font-size: 18px;
     text-align: center;
 }
-
+/*设置底部文本相对定位，相对于上偏移，文本颜色，字号，绝对居中*/
 .link {
     position: relative;
     top: 10px;
@@ -118,3 +124,4 @@ body {
     color: #5FC0CD;
     float: right;
 }
+/*设置link文本相对定位，相对于上右偏移，文本颜色，向右浮动*/
