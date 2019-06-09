@@ -1,0 +1,250 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #ffffff;
+}
+
+span {
+    color: #fff;
+    /*给span内字体设置颜色*/
+
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 44px;
+    background-color: #5FC0CD;
+    z-index: 10;
+    /*给页面头部设置宽高和颜色*/
+}
+
+.lts {
+    position: absolute;
+    left: 18px;
+    top: 14px;
+    /*给返回图设置定位和偏移*/
+}
+
+.top {
+    margin: 0px;
+    position: relative;
+    top: 10px;
+    bottom: 10px;
+    font-size: 18px;
+    /*头部字体设置定位和偏移，字号*/
+}
+
+main {
+    /*此为内容标签，设置了当内容超过指定高度时，会隐藏掉超出内容，但会在Y轴出现一个滚动条*/
+    height: 490px;
+    z-index: -10;
+    overflow-y: scroll;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 163px;
+    background-image: url(../picture/背景.png);
+    background-size: 100% 100%;
+    /*给上半部插入背景图，设置盒子宽高图片宽高铺满,*/
+}
+
+.ellipse {
+    position: absolute;
+    top: 40px;
+    left: 15px;
+
+    /*头像图*/
+}
+
+.positioning {
+    position: absolute;
+    top: 87px;
+    left: 122px;
+    /*定位图*/
+}
+
+
+.name {
+    position: absolute;
+    top: 58px;
+    left: 120px;
+    font-size: 18px;
+    /*给姓名设置定位属性字号*/
+}
+
+.age {
+    position: absolute;
+    top: 60px;
+    left: 187px;
+    font-size: 14px;
+    /*年龄*/
+}
+
+.address {
+    position: absolute;
+    top: 88px;
+    left: 138px;
+    font-size: 12px;
+    /*地址*/
+}
+
+.unique {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #E1E5E7;
+    /*专业技能设为弹性盒子，垂直居中*/
+}
+
+.content {
+    margin-left: 17px;
+}
+
+.brief {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #E1E5E7;
+    /*给下半部分设置样式，定义为弹性盒子，，定义项目在交叉轴中点对齐，设置下边框样式*/
+}
+
+.six {
+    width: 100%;
+    border-bottom: 1px solid #E1E5E7;
+    display: flex;
+    align-items: center;
+    /*自我介绍父盒子，定义为弹性盒子*/
+}
+
+
+
+.details {
+    margin-left: 14px;
+    color: #999999;
+    font-size: 16px;
+    padding-right: 14px;
+    border-right: 1px solid #E1E5E7;
+    /*设置了定位属性，颜色，右内边距和边框样式*/
+}
+
+.professional {
+    color: #333333;
+    margin-left: 15px;
+    padding-left: 14px;
+    border-left: 2px solid #5FC0CD;
+    /*设置了字体颜色定位属性，左内边距左边框样式*/
+}
+
+.one {
+    margin-left: 14px;
+    /*第一个五角星*/
+
+}
+
+.home {
+    margin-left: 5px;
+    padding-right: 10px;
+    border-right: 1px solid #E1E5E7;
+
+    /*住家*/
+}
+
+.two {
+    margin-left: 9px;
+    /*第二个五角星*/
+
+
+}
+
+.meal {
+    margin-left: 9px;
+    /*不含餐*/
+
+}
+
+.price {
+    margin-left: 14px;
+    /*红色价格*/
+    color: #E26163;
+
+}
+
+.year {
+    margin-left: 14px;
+    /*0-3年*/
+
+}
+
+.time {
+    margin-left: 14px;
+    /*全天*/
+
+}
+
+.experience {
+    /*可以洗衣*/
+    margin: 10px 0px 10px 0px;
+    font-size: 14px;
+    /*设置了外边距以达到宽度缩小时撑开父盒子*/
+}
+
+.Introduction {
+    color: #999999;
+    font-size: 16px;
+    padding-right: 14px;
+    border-right: 1px solid #E1E5E7;
+    margin: 15px 14px 15px 31px;
+    flex-shrink: 0;
+    /*自我介绍设置了flex-shrink属性定义了子项目在空间充足时大小不变*/
+   /* white-space: nowrap;*/
+    /*设置单行文本不换行也可达到任务效果*/
+}
+
+footer {
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 84px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*给底部设置了宽高定位属性，定义为弹性盒子，定义项目在主轴两侧的间隔相等，定义项目在交叉轴中点对齐*/
+}
+
+.la {
+    border-radius: 5px;
+    border: 1px solid #5FC0CD;
+    display: flex;
+    width: 47%;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    /*给底部留言按钮设置了宽高，圆角边框属性，边框样式，定义为弹性盒子，定义项目在主轴两侧的间隔相等，定义项目在交叉轴中点对齐*/
+}
+
+.a {
+    font-size: 15px;
+    color: #5FC0CD;
+}
+
+.b {
+    font-size: 15px;
+}
+
+.tc {
+    border-radius: 5px;
+    background-color: #5FC0CD;
+    display: flex;
+    width: 47%;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    /*电话联系按钮*/
+}
