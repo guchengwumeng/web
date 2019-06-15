@@ -55,7 +55,8 @@ p {
     background-color: #E1E5E7;
 }
 
-.eat {/*第二下拉菜单*/
+.eat {
+    /*第二下拉菜单*/
     display: none;
     position: absolute;
     top: 40px;
@@ -65,7 +66,8 @@ p {
     text-align: center;
 }
 
-.one2:hover .eat {/*类选择器选择显示包含的下拉菜单*/
+.one2:hover .eat {
+    /*类选择器选择显示包含的下拉菜单*/
     display: block;
 }
 
@@ -73,7 +75,8 @@ p {
     background-color: #E1E5E7;
 }
 
-.health {/*第三下拉菜单*/
+.health {
+    /*第三下拉菜单*/
     display: none;
     position: absolute;
     top: 40px;
@@ -83,7 +86,8 @@ p {
     text-align: center;
 }
 
-.one3:hover .health {/*类选择器选择显示包含的下拉菜单*/
+.one3:hover .health {
+    /*类选择器选择显示包含的下拉菜单*/
     display: block;
 }
 
@@ -141,8 +145,8 @@ span {
 }
 
 .one1 {
+    /*导航栏第一个盒子*/
     position: relative;
-    display: inline-block;
     height: 100%;
     flex: 1;
     display: flex;
@@ -153,8 +157,8 @@ span {
 }
 
 .one2 {
+    /*第二个盒子*/
     position: relative;
-    display: inline-block;
     height: 100%;
     border-right: 1px solid;
     border-image: linear-gradient(white, #999999, white)4;
@@ -165,8 +169,8 @@ span {
 }
 
 .one3 {
+    /*第三个盒子*/
     position: relative;
-    display: inline-block;
     height: 100%;
     flex: 1;
     display: flex;
@@ -174,10 +178,12 @@ span {
     align-items: center;
 }
 
-.bar {/*导航栏*/
+.bar {
+    /*导航栏*/
     display: flex;
     justify-content: space-around;
-    align-items: center;/*弹性，每个项目两侧的间隔相等，交叉轴的中点对齐*/
+    align-items: center;
+    /*弹性，每个项目两侧的间隔相等，交叉轴的中点对齐*/
     border-bottom: 1px solid #E1E5E7;
     width: 100%;
     height: 40px;
@@ -188,38 +194,46 @@ span {
 }
 
 .for {
-    flex-shrink: 0;/*设为0，子项目不会缩小*/
+    flex-shrink: 0;
+    /*设为0，子项目不会缩小*/
     color: #ffffff;
     margin-right: 12px;
 }
 
-.employer {/*中间按钮组*/
+.employer {
+    /*中间按钮组*/
     width: 143px;
     height: 35px;
     background-color: #55A8B3;
     border-radius: 5px;
-    display: flex;/*弹性，交叉轴的中点对齐，子项目右对齐*/
+    display: flex;
+    /*弹性，交叉轴的中点对齐，子项目右对齐*/
     align-items: center;
     justify-content: flex-end;
 }
 
-.worker {/*护士按钮*/
+.worker {
+    /*护士按钮*/
     flex-shrink: 0;
     width: 72px;
     height: 35px;
     background-color: #ffffff;
     border-radius: 5px;
-    display: flex;/*弹性，子项目两侧间隔相等，垂直方向中间对齐*/
+    display: flex;
+    /*弹性，子项目两侧间隔相等，垂直方向中间对齐*/
     justify-content: space-around;
     align-items: center;
     color: #5FC0CD;
 }
 
-.icon1 {/*定位图片*/
+.icon1 {
+    /*定位图片*/
     width: 21px;
     height: 22px;
-    background: url(../picture/sprites.png) -43px -0;/*雪碧图坐标*/
-    position: fixed;/*相对窗口定位*/
+    background: url(../picture/sprites.png) -43px -0;
+    /*雪碧图坐标*/
+    position: fixed;
+    /*相对窗口定位*/
     top: 11px;
     right: 15px;
 
@@ -229,13 +243,16 @@ article {
     /*标签定义独立的内容，设置了当内容超过指定高度时，会隐藏掉超出内容，但会在Y轴出现一个滚动条*/
     margin: 84px 0px 80px 0px;
     overflow-y: scroll;
-    padding: 0;/*清除内边距*/
+    padding: 0;
+    /*清除内边距*/
 }
 
-ul {/*有序列表*/
+ul {
+    /*有序列表*/
     display: flex;
-    flex-direction:column;
-    justify-content: space-between;/*弹性，主轴为垂直方向，起点在上沿，子项目两侧间隔相等。*/
+    flex-direction: column;
+    justify-content: space-between;
+    /*弹性，主轴为垂直方向，起点在上沿，子项目两侧间隔相等。*/
     height: 90px;
     border-bottom: 1px solid #e1e5e7;
     padding: 0;
@@ -244,7 +261,7 @@ ul {/*有序列表*/
 }
 
 .first {
-
+    /*通过外边距来给元素定位*/
     display: flex;
     margin: 10px 0px 0px 15px;
 }
@@ -252,37 +269,37 @@ ul {/*有序列表*/
 .icon3 {
     width: 12px;
     height: 12px;
+    /*日期表雪碧图*/
     background: url(../picture/sprites.png) -10px -0;
     margin-top: 3px;
 }
 
 .date {
+    /*文本*/
     color: #999999;
     font-size: 13px;
-    margin-left:8px;
+    margin-left: 8px;
 }
 
 .Second {
-
+    /*中间文本的父元素*/
     display: flex;
-
     justify-content: space-between;
-margin-left:34px;
+    margin-left: 34px;
 }
 
-.time {
+.time {/*文本*/
     color: #333333;
     font-size: 14px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
+    text-overflow: ellipsis;/*当文本溢出时显示省略号，*/
+    overflow: hidden;/*溢出文本被隐藏*/
+    white-space: nowrap;/*限定文本只能一行显示*/
     width: 148px;
 
 }
 
-.third {
+.third {/*右侧文本父元素*/
     width: 90px;
-
     display: flex;
     align-items: center;
     flex-grow: 1;
@@ -290,7 +307,7 @@ margin-left:34px;
     margin-right: 15px;
 }
 
-.price {
+.price {/*红色字体文本*/
     color: #E63B0E;
     font-size: 15px;
     margin-right: 11px;
@@ -300,7 +317,7 @@ margin-left:34px;
 
 }
 
-.icon5 {
+.icon5 {/*大于号样式*/
     width: 10px;
     height: 10px;
     border-left: 2px solid #5FC0CD;
@@ -308,28 +325,27 @@ margin-left:34px;
     transform: rotate(225deg);
 }
 
-.set {
+.set {/*地址文本父元素*/
     display: flex;
-    margin:0px 0px 10px 16px;
+    margin: 0px 0px 10px 16px;
 }
 
-.icon4 {
+.icon4 {/*定位雪碧图*/
     width: 10px;
     height: 12px;
     background: url(../picture/sprites.png) -0 -0;
 }
 
-.location {
+.location {/*地址文本*/
     color: #999999;
     font-size: 13px;
-    margin-left:8px;
+    margin-left: 8px;
 }
 
 
 
 
 footer {
-
     background-color: #F8FAFB;
     position: fixed;
     bottom: 0;
@@ -342,43 +358,43 @@ footer {
     /*给底部设置了宽高定位属性，定义为弹性盒子，定义项目在主轴两侧的间隔相等，定义项目在交叉轴中点对齐*/
 }
 
-.green {
+.green {/*父元素*/
     width: 23px;
     height: 37px;
 }
 
-.icon6 {
+.icon6 {/*雪碧图*/
     width: 23px;
     height: 20px;
     background: url(../picture/sprites.png) -64px -0;
 }
 
-.page {
+.page {/*文本*/
     font-size: 10px;
     color: #5FC0CD;
     margin-top: 7px;
 }
 
-.editing {
+.editing {/*雪碧图*/
     width: 47px;
     height: 47px;
     background: url(../picture/sprites.png) -87px -0;
 }
 
-.mine {
+.mine {/*文本*/
     font-size: 10px;
     color: #999999;
     margin-top: 8px;
 
 }
 
-.white {
+.white {/*父元素*/
     width: 21px;
     height: 39px;
 
 }
 
-.icon7 {
+.icon7 {/*文本*/
     width: 21px;
     height: 21px;
     background: url(../picture/sprites.png) -22px -0;
