@@ -1,0 +1,385 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #ffffff;
+    /*清除内外边距，添加背景颜色*/
+}
+
+header {
+    position: fixed;
+    /*固定定位，和上窗口间隔为0*/
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    /*弹性盒子，项目两端间隔相等，中间宽1倍*/
+    align-items: center;
+    width: 100%;
+    height: 44px;
+    background-color: #5FC0CD;
+    z-index: 10;
+
+    /*给页面头部设置宽高和颜色*/
+}
+
+p {
+    /*设置下拉菜单里面内容的边框*/
+    border-bottom: 1px solid #E1E5E7;
+    margin: 0;
+    /*清除外边距*/
+    padding: 16px 0px 16px 0px;
+
+}
+
+.city {
+    /*第一个下拉菜单*/
+    display: none;
+    /*默认下拉菜单隐藏*/
+    position: absolute;
+    top: 40px;
+    /*相对于父属性header向下偏移导航栏的高度*/
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /*给下拉菜单添加边框阴影效果*/
+    background-color: #f9f9f9;
+    text-align: center;
+    /*文本绝对居中*/
+}
+
+.one1:hover .city {
+    /*类选择器选择显示包含的下拉菜单*/
+    display: block;
+}
+
+.one1 p:hover {
+    /*当鼠标悬停在其上时改变颜色*/
+    background-color: #E1E5E7;
+}
+
+.eat {/*第二下拉菜单*/
+    display: none;
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.one2:hover .eat {/*类选择器选择显示包含的下拉菜单*/
+    display: block;
+}
+
+.one2 p:hover {
+    background-color: #E1E5E7;
+}
+
+.health {/*第三下拉菜单*/
+    display: none;
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.one3:hover .health {/*类选择器选择显示包含的下拉菜单*/
+    display: block;
+}
+
+.one3 p:hover {
+    background-color: #E1E5E7;
+}
+
+span {
+    /*设置导航栏文本颜色字号*/
+    color: #999999;
+    font-size: 14px;
+}
+
+.place {
+    /*第一个导航栏文本*/
+    flex-shrink: 0;
+    margin-left: 40%;
+}
+
+.drawing1 {
+    /*下三角用CSS画图*/
+    flex-shrink: 0;
+    margin-right: 6px;
+    border-left: 3.5px solid transparent;
+    border-right: 3.5px solid transparent;
+    border-top: 4px solid #AFBAC0;
+}
+
+.board {
+    /*第二个导航栏文本*/
+    flex-shrink: 0;
+    margin-left: 40%;
+}
+
+.drawing2 {
+    flex-shrink: 0;
+    margin-right: 6px;
+    border-left: 3.5px solid transparent;
+    border-right: 3.5px solid transparent;
+    border-top: 4px solid #AFBAC0;
+}
+
+.patient {
+    /*第三个导航栏文本*/
+    flex-shrink: 0;
+    margin-left: 30%;
+}
+
+.drawing3 {
+    margin-right: 16px;
+    flex-shrink: 0;
+    border-left: 3.5px solid transparent;
+    border-right: 3.5px solid transparent;
+    border-top: 4px solid #AFBAC0;
+}
+
+.one1 {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 1px solid;
+    border-image: linear-gradient(white, #999999, white)4;
+}
+
+.one2 {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    border-right: 1px solid;
+    border-image: linear-gradient(white, #999999, white)4;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.one3 {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bar {/*导航栏*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;/*弹性，每个项目两侧的间隔相等，交叉轴的中点对齐*/
+    border-bottom: 1px solid #E1E5E7;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    background-color: #ffffff;
+    top: 44px;
+    z-index: 5;
+}
+
+.for {
+    flex-shrink: 0;/*设为0，子项目不会缩小*/
+    color: #ffffff;
+    margin-right: 12px;
+}
+
+.employer {/*中间按钮组*/
+    width: 143px;
+    height: 35px;
+    background-color: #55A8B3;
+    border-radius: 5px;
+    display: flex;/*弹性，交叉轴的中点对齐，子项目右对齐*/
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.worker {/*护士按钮*/
+    flex-shrink: 0;
+    width: 72px;
+    height: 35px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: flex;/*弹性，子项目两侧间隔相等，垂直方向中间对齐*/
+    justify-content: space-around;
+    align-items: center;
+    color: #5FC0CD;
+}
+
+.icon1 {/*定位图片*/
+    width: 21px;
+    height: 22px;
+    background: url(../picture/sprites.png) -43px -0;/*雪碧图坐标*/
+    position: fixed;/*相对窗口定位*/
+    top: 11px;
+    right: 15px;
+
+}
+
+article {
+    /*标签定义独立的内容，设置了当内容超过指定高度时，会隐藏掉超出内容，但会在Y轴出现一个滚动条*/
+    margin: 84px 0px 80px 0px;
+    overflow-y: scroll;
+    padding: 0;/*清除内边距*/
+}
+
+ul {/*有序列表*/
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;/*弹性，主轴为垂直方向，起点在上沿，子项目两侧间隔相等。*/
+    height: 90px;
+    border-bottom: 1px solid #e1e5e7;
+    padding: 0;
+    margin: 0;
+
+}
+
+.first {
+
+    display: flex;
+    margin: 10px 0px 0px 15px;
+}
+
+.icon3 {
+    width: 12px;
+    height: 12px;
+    background: url(../picture/sprites.png) -10px -0;
+    margin-top: 3px;
+}
+
+.date {
+    color: #999999;
+    font-size: 13px;
+    margin-left:8px;
+}
+
+.Second {
+
+    display: flex;
+
+    justify-content: space-between;
+margin-left:34px;
+}
+
+.time {
+    color: #333333;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 148px;
+
+}
+
+.third {
+    width: 90px;
+
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: flex-end;
+    margin-right: 15px;
+}
+
+.price {
+    color: #E63B0E;
+    font-size: 15px;
+    margin-right: 11px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+.icon5 {
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid #5FC0CD;
+    border-bottom: 2px solid #5FC0CD;
+    transform: rotate(225deg);
+}
+
+.set {
+    display: flex;
+    margin:0px 0px 10px 16px;
+}
+
+.icon4 {
+    width: 10px;
+    height: 12px;
+    background: url(../picture/sprites.png) -0 -0;
+}
+
+.location {
+    color: #999999;
+    font-size: 13px;
+    margin-left:8px;
+}
+
+
+
+
+footer {
+
+    background-color: #F8FAFB;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #E1E5E7;
+    /*给底部设置了宽高定位属性，定义为弹性盒子，定义项目在主轴两侧的间隔相等，定义项目在交叉轴中点对齐*/
+}
+
+.green {
+    width: 23px;
+    height: 37px;
+}
+
+.icon6 {
+    width: 23px;
+    height: 20px;
+    background: url(../picture/sprites.png) -64px -0;
+}
+
+.page {
+    font-size: 10px;
+    color: #5FC0CD;
+    margin-top: 7px;
+}
+
+.editing {
+    width: 47px;
+    height: 47px;
+    background: url(../picture/sprites.png) -87px -0;
+}
+
+.mine {
+    font-size: 10px;
+    color: #999999;
+    margin-top: 8px;
+
+}
+
+.white {
+    width: 21px;
+    height: 39px;
+
+}
+
+.icon7 {
+    width: 21px;
+    height: 21px;
+    background: url(../picture/sprites.png) -22px -0;
+}
