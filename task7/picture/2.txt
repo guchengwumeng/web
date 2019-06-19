@@ -1,0 +1,24 @@
+
+X
+.bg-1 {
+    宽度：15px; 身高：15px;
+    background：url（'css_sprites.png'） -  10px -10px;
+}
+
+X
+.bg-2 {
+    宽度：15px; 身高：15px;
+    background：url（'css_sprites.png'） -  45px -10px;
+}
+
+X
+.bg-3 {
+    宽度：15px; 身高：15px;
+    background：url（'css_sprites.png'） -  10px -45px;
+}
+
+X
+.bg-4 {
+    宽度：15px; 身高：15px;
+    background：url（'css_sprites.png'） -  45px -45px;
+}

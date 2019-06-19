@@ -1,0 +1,266 @@
+body {
+    margin: 0;
+    background-color: #29BDE0;
+}
+
+header {
+    width: 100%;
+    height: 44px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #29BDE0;
+    z-index: 100;
+}
+
+p {
+    text-align: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10vw;
+}
+
+.head {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 15px;
+    left: 12px;
+}
+
+.bar {
+
+    height: 12px;
+    margin: 2px;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.san {
+    height: 2.5px;
+    background-color: #fff;
+    margin-top: 5px;
+}
+
+.vote {
+    font-size: 16px;
+    color: #fff;
+}
+
+
+.fork {
+    right: 10px;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    /*上边距为父元素50%*/
+    margin-top: -8px;
+    /*再往上移动自身高度一半，就垂直居中了*/
+
+    position: absolute;
+}
+
+.fork::before,
+.fork::after {
+    background: #fff;
+    /*前后插入颜色*/
+}
+
+.fork::before,
+.fork::after {
+    height: 18px;
+    width: 1.5px;
+
+}
+
+.fork::before {
+    transform: rotate(45deg);
+    /*前*/
+}
+
+.fork::after {
+    transform: rotate(-45deg);
+    /*后*/
+}
+
+.fork::before,
+/*所有类名以“icon-”开头的伪元素*/
+.fork::after {
+    content: "";
+    position: absolute;
+
+}
+
+
+article {
+    overflow-y: scroll;
+    overflow: hidden;
+    padding: 0;
+    margin: 44px 0px 70px 0px;
+}
+
+.board {
+    height: 41px;
+    background-color: #B9E9F5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.music {
+    width: 26px;
+    height: 26px;
+    background: url(../picture/sprites1.png) -0 -101px;
+    margin-right: 13px;
+
+}
+
+.play {
+    opacity: 0;
+}
+
+.heads {
+    padding-left: 23px;
+    margin: 0;
+    text-overflow: ellipsis;
+    /*当文本溢出时显示省略号，*/
+    overflow: hidden;
+    /*溢出文本被隐藏*/
+    white-space: nowrap;
+    /*限定文本只能一行显示*/
+}
+
+.into {
+    height: 40px;
+    display: flex;
+
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    margin-left: 36px;
+    border-left: 3.5px solid transparent;
+    border-right: 3.5px solid transparent;
+    border-top: 7px solid #B9E9F5;
+}
+
+.click {
+    color: #fff;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    /*当文本溢出时显示省略号，*/
+    overflow: hidden;
+    /*溢出文本被隐藏*/
+    white-space: nowrap;
+    /*限定文本只能一行显示*/
+}
+
+.box {
+    width: 21vw;
+    height: 21vw;
+    background-color: #F5C97B;
+    border: 1vw solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.box:hover .bost {
+    /*类选择器选择显示包含的下拉菜单*/
+    display: block;
+}
+
+.bost {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 115%;
+}
+
+.matting {
+ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon1 {
+
+    width: 4.5vw;
+    height: 4.5vw;
+    background: url(../picture/sprites2.png) no-repeat 17.46% 17.46%/450%;  
+    margin-left:-1vw;
+}
+
+.icon2 {
+    width: 4.5vw;
+    height: 4.5vw;
+    background: url(../picture/sprites2.png) no-repeat 81.78% 17.46%/450%;  
+}
+
+.icon3 {
+    width: 4.5vw;
+    height: 4.5vw;
+    background: url(../picture/sprites2.png) no-repeat 17.46% 81.78%/450%;
+}
+
+.icon4 {
+    width: 4.5vw;
+    height: 4.5vw;
+    background: url(../picture/sprites2.png) no-repeat 81.78% 81.78%/450%; 
+    margin-right:-1vw;
+}
+
+.identity {
+    font-size: 5vw;
+    color: #565656;
+}
+
+.Sorting {
+    height: 4vw;
+    background-color: #83B09A;
+    color: #fff;
+    margin: 0;
+    font-size: 3vw;
+}
+
+
+footer {
+    height: 95px;
+    background-color: #29BDE0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.end {
+    width: 70%;
+    height: 44px;
+    background-color: #FBB435;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice {
+    color: #fff;
+    font-size: 26px;
+}
