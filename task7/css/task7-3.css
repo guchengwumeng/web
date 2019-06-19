@@ -131,6 +131,10 @@ footer {
     background: rgba(41, 189, 224, .48);
 }
 
+a {
+    text-decoration: none
+}
+
 .red {
     display: flex;
     justify-content: center;
