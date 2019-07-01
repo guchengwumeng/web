@@ -1,0 +1,16 @@
+bg-矢量智能对象3 {
+    宽度：25px; 身高：24px;
+    background：url（'css_sprites.png'） -  10px -10px;
+}
+
+X
+.bg-矢量智能对象4 {
+    宽度：25px; 身高：24px;
+    background：url（'css_sprites.png'） -  55px -10px;
+}
+
+X
+.bg-矢量智能对象5 {
+    宽度：25px; 身高：24px;
+    background：url（'css_sprites.png'） -  10px -54px;
+}

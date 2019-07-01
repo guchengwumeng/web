@@ -1,0 +1,28 @@
+.bg-rocket {
+    宽度：43px; 身高：62px;
+    background：url（'css_sprites.png'） -  90px -10px;
+}
+    宽度：43px; 身高：62px;
+    background：url（'css_sprites.png'） -  10px -78px;
+}
+    宽度：43px; 身高：62px;
+    background：url（'css_sprites.png'） -  10px -10px;
+}
+
+X
+.bg-archive {
+    宽度：60px; 身高：48px;
+    background：url（'css_sprites.png'） -  10px -10px;
+}
+
+X
+.bg-Shape_253 {
+    宽度：52px; 身高：55px;
+    background：url（'css_sprites.png'） -  10px -78px;
+}
+
+X
+.bg-user_拷贝{
+    宽度：13px; 身高：13px;
+    background：url（'css_sprites.png'） -  90px -92px;
+}
