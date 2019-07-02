@@ -24,7 +24,7 @@ body {
     border-bottom: 1px solid #D0D6D9;
 }
 
-.direction span {
+.direction a {
     margin-left: 20px;
 }
 
@@ -34,7 +34,7 @@ body {
     color: #acacac;
 }
 a {color:#000000;}
-.direction span:nth-child(1n+2):hover {
+.direction a:nth-child(1n+2):hover {
     /*选择从第二个开始*/
     background-color: #1cb176;
     color: #fff;
