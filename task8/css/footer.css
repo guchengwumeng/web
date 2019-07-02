@@ -4,7 +4,7 @@
     justify-content: space-around;
 }
 
-.hotlineo {
+.service {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,6 +19,9 @@
     justify-content: space-between;
     align-items: center;
 
+}
+nav a {
+    margin-left: 30px;
 }
 nav {
     background-color:#1CB176;
@@ -42,11 +45,11 @@ nav {
 }
 
 
-.underline {
+.navigation-bar {
     text-align:center;
     height: 48px;
 }
-.underline:hover {
+li:hover .navigation-bar {
 
     border-bottom: 1px solid #fff;
 }

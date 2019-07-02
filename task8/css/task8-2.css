@@ -9,7 +9,7 @@ body {
     border-bottom: 1px solid #D0D6D9;
 }
 
-.top-line {
+.exploit {
     font-size: 25px;
     padding: 10px 0px;
     border-bottom: 1px solid #D0D6D9;
@@ -19,22 +19,22 @@ body {
     color: #1CB176;
 }
 
-.jobs {
+.direction {
     padding: 10px 0px;
     border-bottom: 1px solid #D0D6D9;
 }
 
-.jobs span {
+.direction span {
     margin-left: 20px;
 }
 
-.jobs span:first-child {
+.direction span:first-child {
     margin: 0;
     font-size: 15px;
     color: #acacac;
 }
 a {color:#000000;}
-.jobs span:nth-child(1n+2):hover {
+.direction span:nth-child(1n+2):hover {
     /*选择从第二个开始*/
     background-color: #1cb176;
     color: #fff;

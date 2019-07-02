@@ -12,13 +12,11 @@
  .leng .friendship span:hover {
 
      border-bottom: 2px solid #29b078;
-     
+
  }
 
 
- nav a {
-     margin-left: 30px;
- }
+
 
  div.url {
      font-size: 5px;
@@ -35,6 +33,156 @@
      background: url(../picture/sprites4.png) no-repeat 15% 17%/350%;
      background-size: 4rem
  }
+
+ @media screen and (min-width: 970px) and (max-width: 2300px) {
+     .skewing-c {
+         margin-right: 0px;
+     }
+
+     .skewing-b {
+         margin-right: -4px;
+     }
+ }
+
+ @media screen and (min-width: 970px) and (max-width: 1200px) {
+
+     /* .skewing-a {
+margin-right:5px;
+
+    } */
+     .skewing-b {
+         margin-right: -4px;
+     }
+
+     .skewing-c {
+         margin-right: -4px;
+     }
+
+     /* .skewing-d {
+        margin-right:5px;
+    }
+    .skewing-e {
+        margin-right:5px;
+    }
+    .skewing-f {
+        margin-right:5px;
+    }
+    .skewing-g {
+        margin-right:5px;
+    }
+    .skewing-h {
+        margin-right:5px;
+    } */
+
+ }
+
+ @media screen and (min-width: 770px) and (max-width: 990px) {
+
+     /* .skewing-a {
+margin-right:5px;
+
+    } */
+     .skewing-b {
+         margin-right: 0px;
+     }
+
+     .skewing-c {
+         margin-right: 0px;
+     }
+
+     /* .skewing-d {
+        margin-right:5px;
+    }
+    .skewing-e {
+        margin-right:5px;
+    } */
+ }
+
+ @media screen and (min-width: 400px) and (max-width: 770px) {
+     .skewing-a {
+         margin-right: 2px;
+
+     }
+
+     .skewing-b {
+         margin-right: 1px;
+     }
+
+     .skewing-c {
+         margin-right: -3px;
+     }
+
+     .skewing-d {
+         margin-right: 0px;
+     }
+
+     .skewing-e {
+         margin-right: 2px;
+     }
+
+     .skewing-f {
+         margin-right: 5px;
+     }
+
+     .skewing-g {
+         margin-right: -2px;
+     }
+
+     .skewing-h {
+         margin-right: 0px;
+     }
+ }
+
+ @media screen and (min-width: 0px) and (max-width: 575px) {
+
+     .skewing-a {
+         margin-right: 0px;
+
+     }
+
+     .skewing-b {
+         margin-right: 0px;
+     }
+
+     .skewing-c {
+         margin-right: 0px;
+     }
+
+     .skewing-d {
+         margin-right: 0px;
+     }
+
+     .skewing-e {
+         margin-right: 0px;
+     }
+
+     .skewing-f {
+         margin-right: 0px;
+     }
+
+     .skewing-g {
+         margin-right: 0px;
+     }
+
+     .skewing-h {
+         margin-right: 0px;
+     }
+ }
+
+ @media (min-width:992px) {
+     .reset {
+         flex: 0 0 19.666667%;
+         max-width: 19.666667%;
+     }
+ }
+
+
+
+
+
+
+
+
 
  .icon5 {
      width: 54px;
@@ -55,9 +203,11 @@
  div.line {
      /* margin: 0px 30px; */
  }
-.efficient  {
-    margin:10px 0px;
-}
+
+ .efficient {
+     margin: 10px 0px;
+ }
+
  .picture-1 {
      width: 22px;
      height: 31px;
@@ -77,7 +227,7 @@
  }
 
  .picture-4 {
-     padding-top:6px;
+     padding-top: 6px;
      padding-right: 20px;
      width: 13px;
      height: 13px;
@@ -95,13 +245,16 @@
  }
 
  .feature {
-     margin-top:20px;
+     margin-top: 20px;
      display: flex;
      flex-direction: column;
      justify-content: space-between;
      align-items: center;
  }
- .feature p {margin: 0;}
+
+ .feature p {
+     margin: 0;
+ }
 
 
  .feature:hover {
@@ -114,7 +267,7 @@
 
  @media only screen and (min-width: 768px) {
      .featur {
-         margin-top:20px;
+         margin-top: 20px;
          display: flex;
          flex-direction: column;
          justify-content: space-between;
@@ -151,6 +304,7 @@
  }
 
  .xuexi {
+     padding-bottom: 10px;
      text-align: center;
      white-space: nowrap;
  }
@@ -208,7 +362,8 @@
  .shovw {
      text-align: center;
      margin: 20px 0px;
-     padding-bottom: 70px;
+     padding: 0px 20px;
+     padding-bottom: 40px;
      background-color: #ffffff;
 
  }
@@ -282,5 +437,3 @@
  .bom-link {
      background-color: #fff;
  }
-
- 
