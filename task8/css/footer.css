@@ -1,27 +1,28 @@
 .roof {
     height: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-p.hotlineo {
+.hotlineo {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    padding-left: 50px;
     color: #29b078;
     font-size: 15px;
 }
 
 .ico {
-    width: 100px;
+    width: 10em;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 50px;
-}
 
+}
+nav {
+    background-color:#1CB176;
+}
 .icon1 {
     width: 25px;
     height: 24px;
@@ -122,8 +123,8 @@ footer span {
     border-top: 1px solid #32c086;
 }
 .iconm5 {
-    width: 60px;
-    height: 60px;
+    width: 71px;
+    height: 71px;
     background: url(../picture/iconm5.png) no-repeat;
     background-size: 100% 100%;
 

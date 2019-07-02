@@ -53,9 +53,11 @@
  }
 
  div.line {
-     margin: 0px 30px;
+     /* margin: 0px 30px; */
  }
-
+.efficient  {
+    margin:10px 0px;
+}
  .picture-1 {
      width: 22px;
      height: 31px;
@@ -93,6 +95,7 @@
  }
 
  .feature {
+     margin-top:20px;
      display: flex;
      flex-direction: column;
      justify-content: space-between;
@@ -111,6 +114,7 @@
 
  @media only screen and (min-width: 768px) {
      .featur {
+         margin-top:20px;
          display: flex;
          flex-direction: column;
          justify-content: space-between;
@@ -135,11 +139,11 @@
      justify-content: center;
  }
 
- .flow div:only-child {
+ .flow {
      display: flex;
      justify-content: space-between;
      align-items: center;
-     margin: 5px;
+     margin: 5px 0px;
  }
 
  .flow:hover {
@@ -203,7 +207,7 @@
 
  .shovw {
      text-align: center;
-     margin: 5px 10px 5px 5px;
+     margin: 20px 0px;
      padding-bottom: 70px;
      background-color: #ffffff;
 
