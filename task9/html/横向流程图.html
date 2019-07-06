@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../css/2.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <ul class="steps">
+        <li v-for="(item,index) in list" :key="item.id"
+            :class="{ 'step_pass':item.zt==1, 'step_active':item.zt==2,'step_edd':list.length==index+1}">
+            <div class="step-line"></div>
+            <div class="step-content">
+                <div class="step-num">{{item.id}}</div>
+                <div class="sub_title">{{item.name}}</div>
+                <div class="step-sub">
+                    <el-timeline>
+                        <el-timeline-item v-for="ele in item.child" :key="ele.id" :timestamp="ele.rq" placement="top">
+                            <el-card style="width:100%">
+                                <h4>{{ele.name}}</h4>
+                                <p style="word-wrap:break-word ;">{{ele.nr}}</p>
+                            </el-card>
+                        </el-timeline-item>
+                    </el-timeline>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

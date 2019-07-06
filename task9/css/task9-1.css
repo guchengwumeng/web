@@ -1,0 +1,489 @@
+
+.page-header {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: #1077DC;
+}
+
+.page-header div {
+    display: flex;
+
+}
+
+.page-header p {
+    margin: 0px;
+    padding: 5px 0px;
+    font-size: 15px;
+    color: #fff;
+}
+
+.page-header div p {
+    text-align: center;
+    width: 50px;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.page-header div p:hover {
+    width: 70px;
+    background-color: #fff;
+    color: #000000;
+}
+
+nav {
+    background: #dedede;
+}
+
+.navbar-dark .navbar-toggler {
+    border: 1px solid #fff;
+}
+
+#hue a {
+    color: #000000;
+}
+
+.fold-button {
+    margin: 10px 0px 10px 30px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#hue .fold-button:hover a {
+    color: #fff;
+    border-radius: 5px;
+    background-color: #1077DC;
+}
+
+/* 以上为头部样式 */
+
+
+
+
+
+.flow-chart {
+
+    margin: 10px 0px;
+}
+
+.procedure {
+    margin-top: 30px;
+    padding: 0;
+
+}
+
+
+.procedure div {
+
+    width: 100%;
+    height: 6px;
+    position: relative;
+    /* border-radius: 3px 0px; */
+    background-color: #cccccc;
+}
+
+
+.procedure div div {
+
+    left: 50%;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color: #cccccc;
+    transform: translate(-50%, -50%);
+}
+
+.procedure p {
+    margin-top: 30px;
+    line-height: 30px;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 8px;
+    color: #cccccc;
+}
+
+.procedure:hover div {
+    background-color: #FF7F02;
+
+}
+
+.procedure:hover P {
+    color: #FF7F02;
+}
+
+
+
+.Submit-form {
+    margin-bottom: 30px;
+    background-color: #FBFCFF;
+    border: 1px solid #E8E8E8;
+}
+
+
+.as-requested {
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+
+}
+
+.as-requested span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hint {
+    width: 4px;
+    height: 20px;
+    margin-right: 5px;
+    background-color: #1D7AD9;
+    border-radius: 2px;
+
+
+}
+
+.circular {
+    border: 1px solid #e8e8e8;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.title {
+    /* margin-left:15px;
+    margin-right:15px; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #e8e8e8;
+    background: linear-gradient(#f1f1f1, #f5f5f5);
+
+}
+
+.title span {
+    margin: 10px 20px;
+    color: #1D7AD9;
+    font-size: 18px;
+}
+
+.title img {
+    margin-left: 15px;
+
+}
+
+
+.box-pile {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    border-left: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+}
+
+
+
+
+
+/* 第一行单选框样式*/
+.option {
+    position: relative;
+}
+
+.option .radio {
+    /* margin: 30px 0px 30px 15px; */
+    position: relative;
+    /* display: inline-block; */
+    /* font-weight: 400;	 */
+    padding-left: 25px;
+    /* cursor: pointer; */
+}
+
+.cube-type {
+    margin: 20px 0px;
+}
+
+.option .radio input {
+    position: absolute;
+    left: -9999px;
+}
+
+.option .radio i {
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    /* outline: 1; */
+    border: 1px solid #cccccc;
+    border-radius: 50%;
+    /* transition: 2s; */
+}
+
+.option .radio input+i::after {
+    position: absolute;
+    content: '';
+    top: 2px;
+    left: 2px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #1D7AD9;
+    opacity: 0;
+    transition: 2s;
+    
+ 
+}
+
+.option .radio input:checked+i::after {
+    opacity: 1;
+    /* transition: 2s; */
+}
+
+/* label:hover {
+    opacity: 1;
+    animation: rever 5s;
+    animation-direction: alternate;
+} */
+
+@keyframes revers {
+    0% {
+        width: 0px;
+        height: 0px;
+        border-radius: 50%;
+        background-color: #1D7AD9;
+    }
+
+    100% {
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background-color: #1D7AD9;
+    }
+}
+
+
+
+
+
+.texture {
+    margin: 4vw 0px;
+}
+
+.offset {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.diameter {
+    display: flex;
+    margin: 20px 0px;
+
+}
+
+.diameter p {
+    margin: 0px 10px;
+}
+
+.input-field {
+    /* box-sizing: border-box; */
+    text-align: center;
+    font-size: 16px;
+    height: 29px;
+    border-radius: 2px;
+    border: 1px solid #c8cccf;
+    color: #6a6f77;
+    /* -web-kit-appearance: none; */
+    /* -moz-appearance: none; */
+    /* display: block; */
+    outline: 0;
+    /* padding: 0 1em; */
+    /* text-decoration: none; */
+    width: 80px;
+}
+
+.input-field:focus {
+    border: 1px solid #1077DC;
+}
+
+
+.location {
+    position: absolute;
+}
+
+
+
+.pull-down {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+
+.pulldown-menu {
+    width: 130px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+
+
+
+}
+
+
+.particulars {
+    padding: 7px 11px;
+    color: #cccccc;
+}
+
+
+.triangle {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 4px;
+    left: 93px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #1D7AD9;
+}
+
+.triangle::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid #fff;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+
+}
+
+.pulldown-menu:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+}
+
+.dropdown-content a:hover {
+    background-color: #dedede;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+
+
+/* 红色按钮 */
+.next-step {
+    width: 100%;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    /* align-content:center; */
+    border: 1px solid #e8e8e8;
+
+}
+
+.next-step div {
+    margin: 60px 0px;
+    border-radius: 5px;
+    background-color: #E15053;
+}
+
+.next-step div p {
+    margin: 10px 50px;
+    font-size: 2rem;
+    color: #fff;
+}
+
+
+
+
+
+/* 以下为底部样式 */
+footer {
+
+    background-color: #dedede;
+}
+
+footer div {
+    padding: 10px 0px;
+}
+
+.extended-link p:hover {
+    color: #1D7AD9;
+}
+
+.extended-link p {
+    font-size: 12px;
+    color: #999999;
+}
+
+.bottom-navigation p span:hover {
+    color: #1D7AD9;
+}
+
+.bottom-navigation p span {
+    margin-right: 20px;
+    font-size: 8px;
+    color: #999999;
+}
+
+.contact-way {
+    display: flex;
+}
+
+.contact-way p:hover {
+    color: #1D7AD9;
+}
+
+.contact-way p {
+    white-space: nowrap;
+    font-size: 8px;
+    color: #999999;
+
+}
+
+.contact-way img {
+    width: 6em;
+    height: 6em;
+    margin-top: 10px;
+}
+
+.contact-way div {
+    /* width: 140px; */
+    margin-right: 20px;
+}
+
+
+.copyright {
+    width: 100%;
+    margin: 0;
+    padding: 8px 0px;
+    font-size: 6px;
+    text-align: center;
+    color: #fff;
+    background-color: #1077DC;
+}
