@@ -1,0 +1,328 @@
+body {
+    background-color: #f0f0f0;
+}
+
+
+
+.line-top {
+    padding: 10px 0px;
+    border-bottom: 1px solid #D0D6D9;
+}
+
+.exploit {
+    font-size: 25px;
+    padding: 10px 0px;
+    border-bottom: 1px solid #D0D6D9;
+}
+
+.page {
+    color: #1CB176;
+}
+
+.direction {
+    padding: 10px 0px;
+    border-bottom: 1px solid #D0D6D9;
+}
+
+.direction a {
+    margin-left: 20px;
+}
+
+.direction span:first-child {
+    margin: 0;
+    font-size: 15px;
+    color: #acacac;
+}
+a {color:#000000;}
+.direction a:nth-child(1n+2):hover {
+    /*选择从第二个开始*/
+    background-color: #1cb176;
+    color: #fff;
+}
+
+
+.effect:hover {
+    animation: myfirst 2s;
+    animation-direction: alternate;
+    opacity: 0.65;
+    -webkit-animation: myfirst 2s;
+    -webkit-animation-direction: alternate;
+}
+
+
+.tadle-width:hover .effect1 {
+
+    transform: rotatey(360deg);
+    visibility: visible;
+
+}
+
+.effect2:hover {
+    opacity: 0.65;
+    animation: rotation 2s;
+    animation-direction: alternate;
+}
+
+.effect3:hover {
+    opacity: 0.65;
+    animation: despin 2s;
+    animation-direction: alternate;
+
+}
+
+.effect4:hover {
+    opacity: 0.65;
+    animation: revers 2s;
+    animation-direction: alternate;
+
+}
+
+.effect5:hover {
+    opacity: 0.65;
+    animation: rever 2s;
+    animation-direction: alternate;
+
+}
+
+@keyframes myfirst {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.65;
+    }
+
+}
+
+
+
+@keyframes rotation {
+    0% {
+        transform: rotatey(0deg)
+    }
+
+    100% {
+        transform: rotatey(360deg)
+    }
+}
+
+@keyframes despin {
+    0% {
+        transform: rotatex(0deg)
+    }
+
+    100% {
+        transform: rotatex(360deg)
+    }
+}
+
+
+@keyframes revers {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(-360deg)
+    }
+}
+
+@keyframes rever {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+
+
+.effect {
+    height: 100%;
+    margin-right: 15px;
+    position: absolute;
+    top: 0;
+    color: #fff;
+    background-color: #000000;
+    opacity: 0;
+
+}
+
+.effect1 {
+    height: 100%;
+    margin-right: 15px;
+    position: absolute;
+    top: 0;
+    color: #fff;
+    background-color:rgba(0,0,0,0.65);
+    /* opacity: 0; */
+    visibility: hidden;
+    transition: 1s;
+
+}
+
+.effect2 {
+    height: 100%;
+    margin-right: 15px;
+    position: absolute;
+    top: 0;
+    color: #fff;
+    background-color: #000000;
+    opacity: 0;
+    transition: 2s;
+}
+
+.effect3 {
+    height: 100%;
+    margin-right: 15px;
+    position: absolute;
+    top: 0;
+    color: #fff;
+    background-color: #000000;
+    opacity: 0;
+    
+}
+
+.effect4 {
+    height: 100%;
+    margin-right: 15px;
+    position: absolute;
+    top: 0;
+    color: #fff;
+    background-color: #000000;
+    opacity: 0;
+   
+}
+
+.effect5 {
+    height: 100%;
+    margin-right: 15px;
+    position: absolute;
+    top: 0;
+    color: #fff;
+    background-color: #000000;
+    opacity: 0;
+  
+}
+
+
+.head {
+    margin-top: 2em;
+    text-align: center;
+
+}
+
+.details {
+    padding: 0px 15px;
+
+}
+
+
+
+
+.grid {
+    border:1px solid #dedede;
+    background-color: #fff;
+}
+
+.table-margin {
+    margin: 20px 0px;
+}
+
+.tadle-1 {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.tadle-2 {
+    width: 100%;
+    height: 70px;
+    table-layout: fixed;
+
+}
+
+.tadle-3 {
+    width: 100%;
+    height: 175px;
+
+}
+
+.td-detail {
+    padding-right: 10px;
+}
+
+.td-img {
+    width: 85px;
+    padding: 5px;
+}
+
+.td-title {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.td-detail {
+    font-size: 7px;
+}
+
+.td-dim {
+    font-size: 6px;
+    color: #999999;
+}
+
+.td-size {
+    font-size: 7px;
+}
+
+.td-in {
+    width: 104px;
+    text-align: center;
+}
+
+.td-five {
+    margin: 0px 0px 5px 10px;
+
+}
+
+.td-red {
+    color: #F01400;
+}
+
+.td-left {
+    
+    margin-left: 15px;
+}
+
+.td-right {
+    margin-right: 15px;
+}
+
+.td-flex {
+    display:flex;
+    justify-content:space-between;
+}
+.td-lt {
+    margin-left: 8px;
+    font-size: 7px;
+    font-weight: bold;
+}
+
+.td-top {
+    border-top: 1px solid #dedede;
+}
+
+.td-bottom {
+    border-bottom: 1px solid #dedede;
+}
+
+.tr-left {
+    border-left: 1px solid #dedede;
+}
+
+.tr-right {
+    border-right: 1px solid #dedede;
+}

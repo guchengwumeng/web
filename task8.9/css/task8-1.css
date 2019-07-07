@@ -1,0 +1,411 @@
+ /* Make the image fully responsive */
+ .carousel-inner img {
+     width: 100%;
+     height: 100%;
+ }
+
+ body {
+     background-color: #f0f0f0;
+ }
+
+
+ .leng .friendship span:hover {
+
+     border-bottom: 2px solid #29b078;
+
+ }
+
+
+
+
+ div.url {
+     font-size: 5px;
+ }
+
+ ul {
+     text-align: center;
+ }
+
+
+ .icon4 {
+     width: 28px;
+     height: 15px;
+     background: url(../picture/sprites4.png) no-repeat 15% 17%/350%;
+     background-size: 4rem
+ }
+
+ @media screen and (min-width: 970px) and (max-width: 2300px) {
+     .skewing-c {
+         margin-right: 0px;
+     }
+
+     .skewing-b {
+         margin-right: -4px;
+     }
+ }
+
+ @media screen and (min-width: 970px) and (max-width: 1200px) {
+
+     .skewing-b {
+         margin-right: -4px;
+     }
+
+     .skewing-c {
+         margin-right: -4px;
+     }
+
+
+ }
+
+ @media screen and (min-width: 770px) and (max-width: 990px) {
+
+
+     .skewing-b {
+         margin-right: 0px;
+     }
+
+     .skewing-c {
+         margin-right: 0px;
+     }
+
+ }
+
+ @media screen and (min-width: 400px) and (max-width: 770px) {
+     .skewing-a {
+         margin-right: 2px;
+
+     }
+
+     .skewing-b {
+         margin-right: 1px;
+     }
+
+     .skewing-c {
+         margin-right: -3px;
+     }
+
+     .skewing-d {
+         margin-right: 0px;
+     }
+
+     .skewing-e {
+         margin-right: 2px;
+     }
+
+     .skewing-f {
+         margin-right: 5px;
+     }
+
+     .skewing-g {
+         margin-right: -2px;
+     }
+
+     .skewing-h {
+         margin-right: 0px;
+     }
+ }
+
+ @media screen and (min-width: 0px) and (max-width: 575px) {
+
+     .skewing-a {
+         margin-right: 0px;
+
+     }
+
+     .skewing-b {
+         margin-right: 0px;
+     }
+
+     .skewing-c {
+         margin-right: 0px;
+     }
+
+     .skewing-d {
+         margin-right: 0px;
+     }
+
+     .skewing-e {
+         margin-right: 0px;
+     }
+
+     .skewing-f {
+         margin-right: 0px;
+     }
+
+     .skewing-g {
+         margin-right: 0px;
+     }
+
+     .skewing-h {
+         margin-right: 0px;
+     }
+ }
+
+ @media (min-width:992px) {
+     .reset {
+         flex: 0 0 19.666667%;
+         max-width: 19.666667%;
+     }
+ }
+
+
+
+
+
+
+
+
+
+ .icon5 {
+     width: 54px;
+     height: 54px;
+     margin: 10px 10px 20px;
+ }
+
+ .up {
+     margin-top: 30px;
+     padding-bottom: 10px;
+ }
+
+ div.gps {
+     position: absolute;
+     right: 10%;
+ }
+
+  /* div.line {
+     margin: 0px 30px;
+ }  */
+
+ .efficient {
+     margin: 10px 0px;
+ }
+
+ .picture-1 {
+     width: 22px;
+     height: 31px;
+     background: url(../picture/spri.png) no-repeat 96% 7%/250%;
+ }
+
+ .picture-2 {
+     width: 30px;
+     height: 30px;
+     background: url(../picture/spri.png) no-repeat 16% 8%/250%;
+ }
+
+ .picture-3 {
+     width: 26px;
+     height: 28px;
+     background: url(../picture/spri.png) no-repeat 9% 96%/250%;
+ }
+
+ .picture-4 {
+     padding-top: 6px;
+     padding-right: 20px;
+     width: 13px;
+     height: 13px;
+     background: url(../picture/spri.png) no-repeat -87px -87px;
+ }
+
+ .type {
+     margin: 15px;
+     color: #999999;
+     font-size: 10px;
+ }
+
+ .type1 {
+     color: #29b078;
+ }
+
+ .feature {
+     margin-top: 20px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .feature p {
+     margin: 0;
+ }
+
+
+ .feature:hover {
+     box-shadow: 1px 2px 2px 0px #dedede;
+ }
+
+ .featur:hover {
+     box-shadow: 1px 2px 2px 0px #dedede;
+ }
+
+ @media only screen and (min-width: 768px) {
+     .featur {
+         margin-top: 20px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         align-items: center;
+         padding-left: 30px;
+         border-left: 2px dashed #dedede;
+     }
+ }
+
+ .yen {
+     /* 圆 */
+     height: 35px;
+     width: 35px;
+     margin-right: 7px;
+     flex-shrink: 0;
+     background-color: #fff;
+     border-radius: 50%;
+     color: #29b078;
+     box-shadow: 0px 1px 2px 0px #080103;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .flow {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 5px 0px;
+ }
+
+ .flow:hover {
+     box-shadow: 1px 2px 2px 0px #dedede;
+ }
+
+ .xuexi {
+     padding-bottom: 10px;
+     text-align: center;
+     white-space: nowrap;
+ }
+
+ .typecd {
+     color: #999999;
+     font-size: 8px;
+ }
+
+ main span {
+     height: 18px;
+     color: #999999;
+     font-size: 8px;
+ }
+
+ .dot {
+     /*给底部四个圆定位*/
+     display: flex;
+     justify-content: space-around;
+     width: 46px;
+     height: 8px;
+     margin-bottom: 2px;
+ }
+
+ .yuan {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: 10px;
+ }
+
+ .circle {
+     /*三个小圆*/
+     border-radius: 50%;
+     width: 8px;
+     height: 8px;
+     background-color: #f0f0f0;
+     box-shadow: 0px 1px 2px 0px #080103;
+ }
+
+ .oen {
+     border-radius: 50%;
+     /*第一个小圆*/
+     width: 8px;
+     height: 8px;
+     background-color: #1CB176;
+ }
+
+ .leng {
+     margin: 5px 0px;
+     display: flex;
+     justify-content: center;
+ }
+
+ .shovw {
+     text-align: center;
+     margin: 20px 0px;
+     padding: 0px 20px;
+     padding-bottom: 40px;
+     background-color: #ffffff;
+
+ }
+
+ .shovw:hover {
+     box-shadow: 2px 2px 2px 2px #dedede;
+ }
+
+ .iconm-1 {
+     width: 100%;
+     height: 150px;
+     background: #fff url(../picture/142526.png) center center no-repeat;
+     background-size: 120px;
+ }
+
+ .iconm-2 {
+     width: 100%;
+     height: 150px;
+     background: #fff url(../picture/221415.png) center center no-repeat;
+     background-size: 120px;
+ }
+
+ .iconm-3 {
+     width: 100%;
+     height: 150px;
+     background: #fff url(../picture/337F93.png) center center no-repeat;
+     background-size: 120px;
+ }
+
+ .iconm-4 {
+     width: 100%;
+     height: 150px;
+     background: #fff url(../picture/434546.png) center center no-repeat;
+     background-size: 120px;
+ }
+
+ .iconm-5 {
+     width: 100%;
+     height: 150px;
+     background: #fff url(../picture/508081.png) center center no-repeat;
+     background-size: 120px;
+ }
+
+ .reset {
+     padding: 0;
+     margin-top: 10px;
+ }
+
+ .reset:hover {
+     box-shadow: 2px 2px 2px 2px #dedede;
+ }
+
+
+ .oenf {
+     border-radius: 50%;
+     /*小圆*/
+     width: 5px;
+     height: 5px;
+     background-color: #999999;
+     margin-right: 5px;
+     flex-shrink: 0;
+ }
+
+ .friendship {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     white-space: nowrap;
+ }
+
+ .bom-link {
+     background-color: #fff;
+ }

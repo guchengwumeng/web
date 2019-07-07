@@ -1,0 +1,134 @@
+.roof {
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    color: #29b078;
+    font-size: 15px;
+}
+
+.ico {
+    width: 10em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav a {
+    margin-left: 30px;
+}
+nav {
+    background-color:#1CB176;
+}
+.icon1 {
+    width: 25px;
+    height: 24px;
+    background: url(../picture/sprites4.png) no-repeat -62px -10px;
+}
+
+.icon2 {
+    width: 25px;
+    height: 24px;
+    background: url(../picture/sprites4.png) no-repeat -10px -60px;
+}
+
+.icon3 {
+    width: 25px;
+    height: 24px;
+    background: url(../picture/sprites4.png) no-repeat -55px -60px;
+}
+
+
+.navigation-bar {
+    text-align:center;
+    height: 48px;
+}
+li:hover .navigation-bar {
+
+    border-bottom: 1px solid #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #28a745;
+    color: #fff;
+}
+
+
+.link1 {
+    margin: 30px 0px 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer span:hover {
+    border-bottom: 1px solid #fff;
+}
+
+footer .touch {
+    white-space: nowrap;
+    font-size: 12px;
+
+}
+
+.rvow {
+    margin-bottom: 10px;
+    display:flex;
+}
+
+.dofe {
+    margin-right: 20px;
+}
+
+footer span {
+    height: 18px;
+}
+
+.fhip {
+    display: flex;
+    align-items: center;
+
+}
+
+.coe {
+    margin: 0;
+    font-size: 5px;
+    text-align: center;
+}
+
+.code {
+    display: flex;
+    flex-direction: column;
+}
+
+.xuxi {
+    text-align: center;
+    padding: 4px 0px;
+    margin: 0;
+    font-size: 13px;
+    border-top: 1px solid #32c086;
+}
+.iconm5 {
+    width: 71px;
+    height: 71px;
+    background: url(../picture/iconm5.png) no-repeat;
+    background-size: 100% 100%;
+
+}

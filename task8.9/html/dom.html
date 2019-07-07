@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css">
+    <style>
+        .a {
+
+            width: 300px;
+            height: 300px;
+            position: fixed;
+            top: 5rem;
+            left: 5rem;
+            background-color: #29B078;
+            text-align: center;
+
+        }
+
+        /* .b {
+            width: 200px;
+            height: 200px;
+            background: red;
+            -webkit-animation: fadeinout 4s linear forwards;
+            animation: fadeinout 4s linear forwards;
+            opacity: 0;
+        } */
+
+        @-webkit-keyframes fadeinout {
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        @keyframes fadeinout {
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        .b {
+            width: 100%;
+            height: 100%;
+            text-align: left;
+            background: rgb(255, 255, 255);
+            -webkit-transition: background 300ms ease-in 200ms;
+            /* property duration timing-function delay */
+            -moz-transition: background 300ms ease-in 200ms;
+            -o-transition: background 300ms ease-in 200ms;
+            transition: background 300ms ease-in 200ms;
+        }
+
+        .b:hover {
+            background-color: rgba(8, 1, 3, 0);
+            text-align: center;
+            /* background: red; */
+            -webkit-animation: fadeinout 4s linear forwards;
+            animation: fadeinout 4s linear forwards;
+            opacity: 0;
+
+        }
+
+        .c {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(14, 10, 30, 0.15);
+            text-align: center;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="a"><P>父元素</P><div class="b">第一个子元素</div>
+        <div class="c">第二个子元素</div>
+    </div>
+
+
+
+</body>
+
+</html>
