@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  background-color: #eff0f4;
+}
+
+header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header span:first-child {
+  margin-left: 1em;
+}
+
+header span:last-child {
+  margin-right: 1em;
+}
+
+header span:nth-child(2) {
+  font-size: 1.6em;
+  margin: 0.8em 0;
+}
+
+span, p {
+  font-size: 1.3em;
+  color: #fff;
+}
+
+header, form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header, form, div {
+  width: 100%;
+}
+
+header, div {
+  background-color: #5fc0cd;
+}
+
+div p {
+  margin-top: 3em;
+  padding: 1em 0;
+  text-align: center;
+}
+
+form {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1em;
+  background-color: #fff;
+}
+
+form img {
+  width: 1.3em;
+  margin: 1.1em 0;
+  padding: 0.8em 2.3em;
+  border-right: 2px solid #dedede;
+}
+
+form input {
+  border: 0;
+  height: 2.3em;
+  margin-left: 1.5em;
+  font-size: 1.3em;
+}
+
+a {
+  margin-right: 1.4em;
+  color: #5fc0cd;
+  font-size: 1.4em;
+  float: right;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000000;
+}
+/*# sourceMappingURL=task11.css.map */
