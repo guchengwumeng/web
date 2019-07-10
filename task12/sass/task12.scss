@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    background-color: #fff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: #5fc0cd;
+    z-index: 100;
+
+    span {
+        position: fixed;
+        float: left;
+        left: 1.5em;
+        top: 1.5em;
+
+        div {
+
+            width: 0.8em;
+            height: 0.8em;
+            transform: matrix(0.8, 0.7, -0.8, 0.7, 0, 0);
+            border-left: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+        }
+    }
+
+    p {
+        padding: 1em 0;
+        margin: 0;
+        font-size: 1.2em;
+        color: #fff;
+        text-align: center;
+    }
+}
+
+header,
+main,
+footer {
+    width: 100%;
+}
+
+main {
+
+    overflow-y: scroll;
+
+    p,
+    span {
+        font-size: 1em;
+    }
+
+    margin: {
+        top: 3.9em;
+        bottom: 8em;
+    }
+
+    .picture {
+        height: 12em;
+        position: relative;
+        color: #fff;
+
+        background: {
+            image: url(../picture/背景.png);
+            size: cover;
+            position: center;
+            repeat: no-repeat;
+        }
+    }
+
+    p {
+        margin: 1em 1em;
+        padding-left: 1em;
+        color: #333333;
+        font-weight: bold;
+        border-left: 2px solid #5fc0cd;
+    }
+
+    ul {
+        border-top: 1px solid #e1e5e7;
+        border-bottom: 1px solid #e1e5e7;
+        padding-left: 17px;
+
+        li {
+            display: flex;
+            border-bottom: 1px solid #e1e5e7;
+            list-style-type: none;
+
+            &:last-child {
+                border-bottom: 0;
+            }
+
+            span {
+                margin: 15px 0px 15px 15px;
+            }
+
+            .details {
+                padding-right: 10px;
+                border-right: 1px solid #e1e5e7;
+                color: #999999;
+                
+            }
+
+            .red {
+                color: #e26163;
+            }
+
+            .introduce {
+                padding:10px 15px;
+                font-size: 14px;
+            }
+            .self {
+                height: 21px;
+                margin: 15px 0px 15px 15px;
+                // padding-right:15px;
+                flex-shrink: 0;
+            }
+        }
+
+    }
+
+}
+
+
+main div {
+
+    img {
+        &:first-child {
+            top: 3em;
+            left: 1em;
+        }
+
+        &:nth-child(2) {
+            top: 6em;
+            left: 7.8em;
+        }
+    }
+
+    img,
+    span {
+        position: absolute;
+    }
+
+    .name {
+        top: 3.4em;
+        left: 7em;
+        font-size: 1.1em;
+    }
+
+    .age {
+        top: 5em;
+        left: 14.5em;
+        font-size: 0.8em;
+    }
+
+    .site {
+        top: 7.6em;
+        left: 11.6em;
+        font-size: 0.6em;
+    }
+
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    div {
+
+        text-align: center;
+        width: 45%;
+        margin: 1em 0;
+        padding: 1em 0;
+        font-size: 1em;
+        border: 1px solid #5fc0cd;
+        border-radius: 5px;
+        text-decoration: none;
+
+        &:first-child {
+            a {
+                color: #5fc0cd;
+            }
+        }
+
+        &:last-child {
+            a {
+                color: #fff;
+            }
+
+            background-color: #5fc0cd;
+        }
+
+        a:hover {}
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+/**
+ * _ooOoo_
+ * o8888888o
+ * 88" . "88
+ * (| -_- |)
+ *  O\ = /O
+ * ___/`---'\____
+ * .   ' \\| |// `.
+ * / \\||| : |||// \
+ * / _||||| -:- |||||- \
+ * | | \\\ - /// | |
+ * | \_| ''\---/'' | |
+ * \ .-\__ `-` ___/-. /
+ * ___`. .' /--.--\ `. . __
+ * ."" '< `.___\_<|>_/___.' >'"".
+ * | | : `- \`.;`\ _ /`;.`/ - ` : | |
+ * \ \ `-. \_ __\ /__ _/ .-` / /
+ * ======`-.____`-.___\_____/___.-`____.-'======
+ * `=---='
+ *          .............................................
+ *           佛曰：bug泛滥，我已瘫痪！
+ */
