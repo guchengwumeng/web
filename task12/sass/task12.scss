@@ -89,15 +89,25 @@ main {
                 border-bottom: 0;
             }
 
+            .home::before {
+                content: url(../picture/五角星.png);
+                margin-right: 10px;
+            }
+
+            span:first-child {
+                height: 21px;
+                padding-right: 10px;
+                border-right: 1px solid #e1e5e7;
+                flex-shrink: 0;
+            }
+
             span {
                 margin: 15px 0px 15px 15px;
             }
 
             .details {
-                padding-right: 10px;
-                border-right: 1px solid #e1e5e7;
                 color: #999999;
-                
+
             }
 
             .red {
@@ -105,19 +115,14 @@ main {
             }
 
             .introduce {
-                padding:10px 15px;
+                padding: 10px 15px;
                 font-size: 14px;
             }
-            .self {
-                height: 21px;
-                margin: 15px 0px 15px 15px;
-                // padding-right:15px;
-                flex-shrink: 0;
-            }
+
+           
+
         }
-
     }
-
 }
 
 
@@ -167,6 +172,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     background-color: #fff;
+
     div {
 
         text-align: center;
@@ -192,7 +198,7 @@ footer {
             background-color: #5fc0cd;
         }
 
-        a:hover {}
+       
 
         a {
             text-decoration: none;

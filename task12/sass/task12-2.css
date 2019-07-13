@@ -1,0 +1,349 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+}
+
+.buttongroup,
+header,
+nav,
+button {
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+}
+
+header .buttongroup {
+  background-color: #5fc0cd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .buttongroup .button-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #55a8b3;
+}
+
+header .buttongroup .button-set .for,
+header .buttongroup .button-set .worker {
+  font-size: 1em;
+  border-radius: 5px;
+}
+
+header .buttongroup .button-set .for {
+  padding: 0px 10px;
+  color: #fff;
+  border-radius: 5px 5px 5px 5px;
+}
+
+header .buttongroup .button-set .worker {
+  padding: 10px 10px;
+  background-color: #fff;
+  color: #5fc0cd;
+}
+
+header .icon1 {
+  background-image: url(../picture/sprites.png);
+  background-position: -43px 0;
+  width: 21px;
+  height: 22px;
+  position: fixed;
+  top: 11px;
+  right: 15px;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*弹性，每个项目两侧的间隔相等，交叉轴的中点对齐*/
+  border-bottom: 1px solid #E1E5E7;
+  height: 40px;
+  background-color: #ffffff;
+}
+
+header nav .one1,
+header nav .one2,
+header nav .one3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-right: 1px solid #e1e5e7;
+}
+
+header nav .one1 p:hover,
+header nav .one2 p:hover,
+header nav .one3 p:hover {
+  background-color: #E1E5E7;
+}
+
+header nav .one3 {
+  border-right: 0;
+}
+
+header nav .place,
+header nav .board,
+header nav .patient {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: auto;
+}
+
+header nav .drawing1,
+header nav .drawing2,
+header nav .drawing3 {
+  margin-right: 16px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 7px solid #AFBAC0;
+}
+
+header nav .one1:hover .city {
+  display: block;
+}
+
+header nav .one2:hover .eat {
+  display: block;
+}
+
+header nav .one3:hover .health {
+  display: block;
+}
+
+header nav .city,
+header nav .eat,
+header nav .health {
+  display: none;
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  background-color: #f9f9f9;
+  text-align: center;
+  border: 1px solid #e1e5e7;
+}
+
+header nav .city p,
+header nav .eat p,
+header nav .health p {
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+  border-bottom: 1px solid #e1e5e7;
+}
+
+header nav .city p:last-child,
+header nav .eat p:last-child,
+header nav .health p:last-child {
+  border-bottom: 0;
+}
+
+main {
+  margin: 102px 0;
+  overflow-y: scroll;
+}
+
+main ul {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #e1e5e7;
+}
+
+main li {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 12px 10px 12px 15px;
+}
+
+main li:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main li .icon2 {
+  background-image: url(../picture/sprites.png);
+  background-position: -10px 0;
+  width: 12px;
+  height: 12px;
+}
+
+main li .serve {
+  margin-left: 10px;
+  color: #999999;
+}
+
+main li .date {
+  margin-left: 22px;
+  text-overflow: ellipsis;
+  /*当文本溢出时显示省略号，*/
+  overflow: hidden;
+  /*溢出文本被隐藏*/
+  white-space: nowrap;
+  /*限定文本只能一行显示*/
+}
+
+main li .hour {
+  color: #e63b0e;
+  text-overflow: ellipsis;
+  /*当文本溢出时显示省略号，*/
+  overflow: hidden;
+  /*溢出文本被隐藏*/
+  white-space: nowrap;
+  /*限定文本只能一行显示*/
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  z-index: -10;
+}
+
+main li .hour::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  margin: 5px 3px 0px 10px;
+  border-left: 2px solid #5FC0CD;
+  border-bottom: 2px solid #5FC0CD;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  float: right;
+  z-index: -12;
+  white-space: nowrap;
+}
+
+main li .icon3 {
+  background-image: url(../picture/sprites.png);
+  background-position: 0px 0px;
+  width: 10px;
+  height: 12px;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f8fafb;
+}
+
+footer a {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+}
+
+footer a .icon4 {
+  background-image: url(../picture/sprites.png);
+  background-position: -64px 0px;
+  width: 23px;
+  height: 20px;
+}
+
+footer a .icon6 {
+  background-image: url(../picture/sprites.png);
+  background-position: -22px 0px;
+  width: 21px;
+  height: 21px;
+}
+
+footer a p {
+  margin: 1px 0px;
+  font-size: 12px;
+}
+
+footer a:first-child p {
+  color: #5FC0CD;
+}
+
+footer a:last-child p {
+  color: #999999;
+}
+
+footer .icon5 {
+  background-image: url(../picture/sprites.png);
+  background-position: -87px 0px;
+  width: 47px;
+  height: 47px;
+  margin: 10px 0;
+}
+
+/**
+ *               ii.                                         ;9ABH,          
+ *              SA391,                                    .r9GG35&G          
+ *              &#ii13Gh;                               i3X31i;:,rB1         
+ *              iMs,:,i5895,                         .5G91:,:;:s1:8A         
+ *               33::::,,;5G5,                     ,58Si,,:::,sHX;iH1        
+ *                Sr.,:;rs13BBX35hh11511h5Shhh5S3GAXS:.,,::,,1AG3i,GG        
+ *                .G51S511sr;;iiiishS8G89Shsrrsh59S;.,,,,,..5A85Si,h8        
+ *               :SB9s:,............................,,,.,,,SASh53h,1G.       
+ *            .r18S;..,,,,,,,,,,,,,,,,,,,,,,,,,,,,,....,,.1H315199,rX,       
+ *          ;S89s,..,,,,,,,,,,,,,,,,,,,,,,,....,,.......,,,;r1ShS8,;Xi       
+ *        i55s:.........,,,,,,,,,,,,,,,,.,,,......,.....,,....r9&5.:X1       
+ *       59;.....,.     .,,,,,,,,,,,...        .............,..:1;.:&s       
+ *      s8,..;53S5S3s.   .,,,,,,,.,..      i15S5h1:.........,,,..,,:99       
+ *      93.:39s:rSGB@A;  ..,,,,.....    .SG3hhh9G&BGi..,,,,,,,,,,,,.,83      
+ *      G5.G8  9#@@@@@X. .,,,,,,.....  iA9,.S&B###@@Mr...,,,,,,,,..,.;Xh     
+ *      Gs.X8 S@@@@@@@B:..,,,,,,,,,,. rA1 ,A@@@@@@@@@H:........,,,,,,.iX:    
+ *     ;9. ,8A#@@@@@@#5,.,,,,,,,,,... 9A. 8@@@@@@@@@@M;    ....,,,,,,,,S8    
+ *     X3    iS8XAHH8s.,,,,,,,,,,...,..58hH@@@@@@@@@Hs       ...,,,,,,,:Gs   
+ *    r8,        ,,,...,,,,,,,,,,.....  ,h8XABMMHX3r.          .,,,,,,,.rX:  
+ *   :9, .    .:,..,:;;;::,.,,,,,..          .,,.               ..,,,,,,.59  
+ *  .Si      ,:.i8HBMMMMMB&5,....                    .            .,,,,,.sMr
+ *  SS       :: h@@@@@@@@@@#; .                     ...  .         ..,,,,iM5
+ *  91  .    ;:.,1&@@@@@@MXs.                            .          .,,:,:&S
+ *  hS ....  .:;,,,i3MMS1;..,..... .  .     ...                     ..,:,.99
+ *  ,8; ..... .,:,..,8Ms:;,,,...                                     .,::.83
+ *   s&: ....  .sS553B@@HX3s;,.    .,;13h.                            .:::&1
+ *    SXr  .  ...;s3G99XA&X88Shss11155hi.                             ,;:h&,
+ *     iH8:  . ..   ,;iiii;,::,,,,,.                                 .;irHA  
+ *      ,8X5;   .     .......                                       ,;iihS8Gi
+ *         1831,                                                 .,;irrrrrs&@
+ *           ;5A8r.                                            .:;iiiiirrss1H
+ *             :X@H3s.......                                .,:;iii;iiiiirsrh
+ *              r#h:;,...,,.. .,,:;;;;;:::,...              .:;;;;;;iiiirrss1
+ *             ,M8 ..,....,.....,,::::::,,...         .     .,;;;iiiiiirss11h
+ *             8B;.,,,,,,,.,.....          .           ..   .:;;;;iirrsss111h
+ *            i@5,:::,,,,,,,,.... .                   . .:::;;;;;irrrss111111
+ *            9Bi,:,,,,......                        ..r91;;;;;iirrsss1ss1111
+ */
+/*# sourceMappingURL=task12-2.css.map */

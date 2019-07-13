@@ -88,13 +88,24 @@ main ul li:last-child {
   border-bottom: 0;
 }
 
+main ul li .home::before {
+  content: url(../picture/五角星.png);
+  margin-right: 10px;
+}
+
+main ul li span:first-child {
+  height: 21px;
+  padding-right: 10px;
+  border-right: 1px solid #e1e5e7;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
 main ul li span {
   margin: 15px 0px 15px 15px;
 }
 
 main ul li .details {
-  padding-right: 10px;
-  border-right: 1px solid #e1e5e7;
   color: #999999;
 }
 
@@ -105,13 +116,6 @@ main ul li .red {
 main ul li .introduce {
   padding: 10px 15px;
   font-size: 14px;
-}
-
-main ul li .self {
-  height: 21px;
-  margin: 15px 0px 15px 15px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
 }
 
 main div img:first-child {
