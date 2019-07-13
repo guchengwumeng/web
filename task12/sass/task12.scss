@@ -80,6 +80,14 @@ main {
         border-bottom: 1px solid #e1e5e7;
         padding-left: 17px;
 
+        li:last-child {
+            span {
+                margin: auto;
+                margin-left:15px;
+                margin-right: 0;
+            }
+        }
+
         li {
             display: flex;
             border-bottom: 1px solid #e1e5e7;
@@ -95,7 +103,7 @@ main {
             }
 
             span:first-child {
-                height: 21px;
+
                 padding-right: 10px;
                 border-right: 1px solid #e1e5e7;
                 flex-shrink: 0;
@@ -103,6 +111,12 @@ main {
 
             span {
                 margin: 15px 0px 15px 15px;
+
+                .detail {
+                    height: 21px;
+                    padding-right: 10px;
+                    border-right: 1px solid #e1e5e7;
+                }
             }
 
             .details {
@@ -115,11 +129,13 @@ main {
             }
 
             .introduce {
-                padding: 10px 15px;
+                display: flex;
+                align-items: center;
+                padding: 16px 15px;
                 font-size: 14px;
             }
 
-           
+
 
         }
     }
@@ -198,7 +214,7 @@ footer {
             background-color: #5fc0cd;
         }
 
-       
+
 
         a {
             text-decoration: none;
