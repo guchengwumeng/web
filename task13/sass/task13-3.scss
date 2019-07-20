@@ -136,6 +136,7 @@ ul {
 }
 
 footer {
+    width: 100%;
     position: fixed;
     bottom: 0;
     @include flex(space-around, center);
@@ -151,3 +152,5 @@ footer {
 
     }
 }
+
+
