@@ -1,0 +1,12 @@
+@charset "UTF-8";
+@mixi @mixin flex-
+
+
+
+
+
+// 固定定位
+@mixin pf-1 {
+  position: fixed;
+  top: 0;
+}

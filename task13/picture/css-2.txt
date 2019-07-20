@@ -1,0 +1,22 @@
+.bg-f0_03 {
+    宽度：24px; 身高：24px;
+    background：url（'css_sprites.png'） -  10px -10px;
+}
+
+
+.bg-f0_07 {
+    宽度：24px; 身高：24px;
+    background：url（'css_sprites.png'） -  54px -10px;
+}
+
+
+.bg-f0_10 {
+    宽度：24px; 身高：24px;
+    background：url（'css_sprites.png'） -  10px -54px;
+}
+
+
+.bg-f0_12 {
+    宽度：24px; 身高：24px;
+    background：url（'css_sprites.png'） -  54px -54px;
+}

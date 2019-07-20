@@ -1,0 +1,22 @@
+.bg-发言讨论结束，投票_03 {
+    宽度：30px; 身高：30px;
+    background：url（'css_sprites.png'） -  10px -10px;
+}
+
+X
+.bg-发言讨论结束，投票_05 {
+    宽度：30px; 身高：30px;
+    background：url（'css_sprites.png'） -  60px -10px;
+}
+
+X
+.bg-发言讨论结束，投票_07 {
+    宽度：30px; 身高：30px;
+    background：url（'css_sprites.png'） -  10px -60px;
+}
+
+X
+.bg-发言讨论结束，投票_09 {
+    宽度：30px; 身高：30px;
+    background：url（'css_sprites.png'） -  60px -60px;
+}

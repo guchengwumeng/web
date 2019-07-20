@@ -1,0 +1,143 @@
+body,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #29bde0;
+}
+
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ffffff;
+}
+
+header .header img:first-child {
+  margin-left: 3.2%;
+}
+
+header .header img:last-child {
+  margin-right: 3%;
+}
+
+header .header .result {
+  font-size: 17px;
+  color: #fff;
+  padding: 10px 0;
+}
+
+header .box-tbl {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 12px;
+  height: 103px;
+  background-image: url(../picture/tuchen2.png), url(../picture/tuchen1.png);
+  background-size: 176px 103px, 43px 42px;
+  background-position: center, center top;
+  background-repeat: no-repeat, no-repeat;
+}
+
+header .box-tbl .box-txt {
+  padding-bottom: 7px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 23px;
+}
+
+header .praise {
+  font-size: 17px;
+  color: #ffc865;
+  line-height: 21px;
+  padding: 0 12%;
+}
+
+header .record {
+  font-size: 13px;
+  color: #fff;
+  line-height: 21px;
+  padding: 31px 0 12px 11.88%;
+}
+
+ul {
+  margin: 22em 0 4em 0;
+  overflow-y: scroll;
+  overflow: hidden;
+}
+
+ul li {
+  border-bottom: 1px solid #dddddd;
+}
+
+ul li:first-child {
+  border-top: 1px solid #dddddd;
+}
+
+ul li .time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 16% 0px 11.88%;
+}
+
+ul li .time .days {
+  font-size: 15px;
+  color: #515151;
+  line-height: 22px;
+}
+
+ul li .time .tims {
+  font-size: 10px;
+  color: #c7c7c7;
+  line-height: 22px;
+}
+
+ul li .event {
+  padding: 14px 0 17px 12.34%;
+  font-size: 13px;
+  color: #a6a6a6;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 65px;
+  background: rgba(41, 189, 224, 0.48);
+}
+
+footer .red {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42.34%;
+  height: 43px;
+  border-radius: 5px;
+  background-color: #f66f6f;
+  color: #fff;
+  font-size: 20px;
+}
+
+footer .yellow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42.34%;
+  height: 43px;
+  border-radius: 5px;
+  background-color: #fbb435;
+  color: #fff;
+  font-size: 20px;
+}
