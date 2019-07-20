@@ -134,11 +134,10 @@ ul {
     }
 
 }
-
 footer {
-    width: 100%;
     position: fixed;
     bottom: 0;
+    width: 100%;
     @include flex(space-around, center);
     height: 65px;
     background: rgba(41, 189, 224, .48);
