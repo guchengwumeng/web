@@ -476,6 +476,14 @@ main .effect p:nth-child(2) {
   font-size: 15px;
 }
 
+main .effect:hover {
+  opacity: 0.65;
+  -webkit-animation: rotation 2s;
+          animation: rotation 2s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
 @-webkit-keyframes rotation {
   0% {
     -webkit-transform: rotatey(0deg);

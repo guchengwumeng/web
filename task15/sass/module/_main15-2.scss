@@ -139,6 +139,13 @@ main {
     }
 
 
+    .effect:hover {
+        opacity: 0.65;
+        animation: rotation 2s;
+        animation-direction: alternate;
+    }
+
+
    }
 
 
