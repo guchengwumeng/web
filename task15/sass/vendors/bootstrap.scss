@@ -1,0 +1,118 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+// 指定宽度和高度（最小/最大属性）确定元素边框。
+
+
+// 容器
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-bj {
+    width: 100%;
+
+    padding: {
+        right: 15px;
+        left: 15px;
+        bottom: 10px;
+    }
+
+    margin: {
+        right: auto;
+        left: auto;
+        top: 30px;
+    }
+
+}
+
+// sm
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+// md
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+
+// lg
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+//xl
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+@media (min-width:992px){
+    .cn{
+        max-width:960px;
+    }
+}
+
+
+
+// 行
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+// col
+$list:(sm:576px, md:768px, lg:992px, xl:1200px);
+
+@each $m,
+$px in $list {
+    @media (min-width:$px) {
+        @for $i from 1 through 12 {
+            .col-#{$m}-#{$i} {
+                flex: 0 0 100%/12*$i;
+                max-width: 100%/12*$i;
+            }
+        }
+    }
+}
+
+//下面二块是为了让 如果没有符合上述的要求的布局  那么就按下面这种布局  即宽度为100%（独占一行）
+$list:(sm, md, lg, xl);
+
+@each $m in $list {
+    @for $i from 1 through 12 {
+        .col-#{$m}-#{$i} {
+            position: relative;
+            width: 100%;
+            min-height: 1px;
+            padding: 0 15px;
+        }
+    }
+}
+
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding: 0 15px;
+    }
+}

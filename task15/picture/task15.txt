@@ -1,0 +1,34 @@
+.bg-矢量智能对象3 {
+    宽度：25px; 身高：24px;
+    background：url（'css_sprites.png'） -  10px -10px;
+}
+
+X
+.bg-矢量智能对象4 {
+    宽度：25px; 身高：24px;
+    background：url（'css_sprites.png'） -  55px -10px;
+}
+
+X
+.bg-矢量智能对象5 {
+    宽度：25px; 身高：24px;
+    background：url（'css_sprites.png'） -  10px -54px;
+}
+
+X
+.bg-user_拷贝{
+    宽度：13px; 身高：13px;
+    background：url（'css_sprites.png'） -  55px -54px;
+}
+
+X
+.bg-形状_7_拷贝_5 {
+    宽度：32px; 身高：30px;
+    background：url（'css_sprites.png'） -  10px -10px;
+}
+
+X
+.bg-877278 {
+    宽度：15px; 身高：15px;
+    background：url（'css_sprites.png'）-107px -10px;
+}

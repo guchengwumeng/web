@@ -1,0 +1,63 @@
+main {
+
+    .top-line {
+        font-size: 18px;
+        margin: 10px 3px;
+
+    }
+
+    span {
+        color: #29b078;
+    }
+
+    // 侧边栏
+    .main-left {
+        margin: 0 20px 70px 20px;
+        background-color: #fff;
+        height: 50em;
+
+        div:first-child {
+            border-bottom: 1px solid #e6e6e6;
+        }
+
+        div {
+            padding: 13px 0;
+            text-align: center;
+            font-size: 15px;
+           &:hover span:first-child {background-color:#f9a372;}
+           &:hover span:last-child {color:#f9a372;}
+            span:first-child {
+                @include circle (12px, #fff, 10px);
+                border: 1px solid #f9a372;
+                display: inline-block;
+            }
+        }
+
+    }
+
+    // 正文
+
+    .main-right {
+
+        margin: 0 20px 70px 20px;
+        background-color: #fff;
+        font-size:15px;
+        div:first-child {
+            margin: 0;
+            padding-top: 30px;
+            padding-bottom: 75px;
+            border-bottom: 1px solid #e6e6e6;
+        }
+
+        div {
+            margin: 30px 45px;
+            color: #999999;
+        }
+
+        p {
+            margin-right: 45px;
+        }
+
+
+    }
+}

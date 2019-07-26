@@ -1,0 +1,73 @@
+/* #页脚 */
+footer {
+    background-color: #29b078;
+    color: #fff;
+
+    .ally {
+        margin: 10px 0;
+        font-size: 15px;
+        @include flex-fd-ai(space-between, flex-start);
+
+        span {
+            margin: 10px 0;
+            padding-bottom: 5px;
+
+            &:hover {
+                border-bottom: 1px solid #fff;
+            }
+        }
+
+        div {
+            margin: 10px 0;
+        }
+
+
+
+
+        &-wechat {
+            margin: 10px 0;
+            font-size: 15px;
+
+            span {
+                margin: 10px 0;
+            }
+
+            @include flex-fd-ai(space-between, flex-start);
+
+            .ally-img {
+                @include icon(92px, 92px, -445px, 261px);
+            }
+        }
+
+    }
+
+
+    p {
+        text-align: center;
+        padding: 5px 0;
+        font-size: 13px;
+        border-top: 1px solid #dedede;
+    }
+
+
+    @media (min-width:768px) {
+        .ally-wechat {
+
+            margin: 10px 0;
+            font-size: 15px;
+
+            span {
+                margin: 10px 0;
+            }
+
+            @include flex-fd-ai(space-between, flex-end);
+
+            .ally-img {
+                @include icon(92px, 92px, -445px, 261px);
+            }
+
+
+        }
+
+    }
+}

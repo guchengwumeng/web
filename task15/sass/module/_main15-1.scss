@@ -1,0 +1,367 @@
+main {
+    h1,h2,h3,h4,h5,h6{margin:20px;text-align:center;}
+    // 轮播图
+    .slide {
+        position: relative;
+        overflow: hidden;
+
+        // 指示符
+        .indicator {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 10px;
+            z-index: 50;
+            display: flex;
+            justify-content: center;
+
+            li {
+                &:first-child {
+                    background-color: #fff;
+                }
+
+                @include circle(10px, rgba(255, 255, 255, .5), 5px);
+                transform:translate(0, 0); //初始位置位移
+                animation: indicator 8s linear infinite;
+            }
+
+        }
+
+        // 轮播图片
+        .slideshow {
+            position: relative;
+            width: 400vw;
+            left: 0;
+            animation: circulation 8s linear infinite;
+            font-size: 0;
+
+            img {
+                width: 100vw;
+
+                float: left;
+            }
+
+        }
+
+        // 左右按钮
+        .slide-left {
+            position: absolute;
+            left: 40px;
+            top: 42%;
+
+            span {
+
+                width: 1.8em;
+                height: 1.8em;
+                transform: matrix(0.8, 0.7, -0.8, 0.7, 0, 0);
+                border-left: 4px solid #fff;
+                border-bottom: 4px solid #fff;
+                display: inline-block;
+            }
+        }
+
+        .slide-right {
+            position: absolute;
+            right: 40px;
+            top: 42%;
+
+            span {
+
+                width: 1.8em;
+                height: 1.8em;
+                transform: matrix(0.8, 0.7, -0.8, 0.7, 0, 0);
+                border-right: 4px solid #fff;
+                border-top: 4px solid #fff;
+                display: inline-block;
+            }
+        }
+    }
+
+}
+
+// 创建loop动画规则
+//   轮播4张，总耗时8s，单张应为2s(25%)
+// 单张切换动画耗时500ms，停留1500ms
+
+@keyframes circulation {
+
+    0% {
+        transform: translate(0, 0);
+    }
+
+    15% {
+        transform: translate(0, 0);
+    }
+
+    ///* 停留1500ms */
+
+    25% {
+        transform: translate(-25%, 0);
+    }
+
+    ///* 切换500ms 位移-25% */
+
+    35% {
+        transform: translate(-25%, 0);
+    }
+
+    50% {
+        transform: translate(-50%, 0);
+    }
+
+    65% {
+        transform: translate(-50%, 0);
+    }
+
+    85% {
+        transform: translate(-75%, 0);
+    }
+
+    95% {
+        transform: translate(-75%, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+
+}
+
+.main-one,
+.main-two,
+.main-three,
+.main-four,
+.main-five {
+    margin: 20px 0;
+    
+}
+.main-one,
+.main-two,
+.main-three,
+.main-four,.main-one-left{
+    &:hover{
+        box-shadow: 1px 2px 2px 0px #dedede;
+    }
+}
+
+
+
+// 第一行
+.main-one {
+
+    @include span;
+    @include flex-jc-ai(center, column);
+
+    span:last-child {
+        margin: 0 10px;
+    }
+
+    .picture-1 {
+        @include icon (43px, 62px, -250px, -180px);
+    }
+
+    .efficient {
+        margin: 15px 0;
+        font-size: 16px;
+    }
+
+    .picture-2 {
+        @include icon (60px, 48px, -325px, -130px);
+    }
+
+    .picture-3 {
+        @include icon (52px, 55px, -325px, -198px);
+    }
+
+    &-left {
+        margin: 20px 0;
+        @include span;
+        @include flex-jc-ai(center, column);
+        
+        .feau {
+            display: flex;
+            margin: 15px 0;
+            color: #29b078;
+
+            .picture-4 {
+                @include icon (13px, 13px, -532px, -265px);
+            }
+        }
+
+    }
+}
+
+@media (min-width:768px){
+    .main-one-left{
+        border-left:2px dashed #dedede;
+    }
+}
+
+
+
+
+
+
+//第二行
+.main-two {
+    @include flex-jc-ai (space-between, row);
+    @include span;
+
+    span:nth-child(1) {
+        @include circle(45px, #fff, 15px);
+        box-shadow: 0px 1px 2px 0px #080103;
+        color: #29b078;
+        text-align: center;
+        line-height: 45px;
+        font-size: 16px;
+        flex-shrink: 0;
+    }
+
+    span:nth-child(3) {
+        @include icon (30px, 30px, -518px, -311px);
+        flex-shrink: 0;
+    }
+
+}
+
+// 第三行
+.main-three {
+    margin: 10px 15px;
+    background-color: #fff;
+
+    border: {
+        width: 1px;
+        style: solid;
+        color: hsla(343, 78%, 2%, 0.15);
+    }
+
+    @include flex-jc-ai(center, column);
+
+    img {
+        width: 8em;
+        margin-top: 10px;
+    }
+
+    span:nth-child(2) {
+        margin: 10px 0;
+        font-size: 16px;
+        color: #333333;
+    }
+
+    span:nth-child(3) {
+        @include span;
+        margin: 0 10px 30px 10px;
+    }
+
+}
+
+.dot {
+    margin: 10px;
+    @include flex-jc-ai (center, row);
+
+    span {
+        @include circle(15px, #fff, 10px);
+
+        &:first-child {
+            background-color: #29b078;
+        }
+
+        border: {
+            width: 1px;
+            style: solid;
+            color: hsla(343, 78%, 2%, 0.15);
+        }
+    }
+
+}
+
+// 第四行
+.iconm {justify-content: center;padding:0 30px;}
+.main-four {
+    padding: 0 !important;
+    margin: 10px 0;
+    
+    .iconm-1 {
+        @include iconm;
+        background: #fff url(../picture/142526.png)center center no-repeat;
+    }
+
+    .iconm-2 {
+        @include iconm;
+        background: #fff url(../picture/221415.png)center center no-repeat;
+    }
+
+    .iconm-3 {
+        @include iconm;
+        background: #fff url(../picture/337F93.png)center center no-repeat;
+    }
+
+    .iconm-4 {
+        @include iconm;
+        background: #fff url(../picture/434546.png)center center no-repeat;
+    }
+
+    .iconm-5 {
+        @include iconm;
+        background: #fff url(../picture/508081.png)center center no-repeat;
+    }
+
+
+    
+
+}
+
+@media (min-width:992px){
+    .cn{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20% !important;
+        max-width: 20% !important;
+    
+    }
+}
+// @media (min-width: 992px){
+//     .cn{
+//         -webkit-box-flex: 0;
+//         -ms-flex: 0 0 19%;
+//             flex: 0 0 19%;
+//     max-width: 19%;
+//     }
+//     .cn{
+//         position: relative;
+//             width: 19%;
+//             min-height: 1px;
+//             padding: 0 15px;
+//     }
+
+
+// }
+
+
+
+
+
+
+
+// 第五行
+.flex {
+    justify-content:space-around;
+    padding:0 15px;
+}
+
+.main-five {
+    @include span;
+    @include flex-jc-ai(center,row);
+    .oenf {
+        @include circle(5px, #999999, 5px);
+        flex-shrink: 0;
+    }
+
+    span {
+        white-space:nowrap;
+       padding-bottom:4px;
+       &:hover {border-bottom:1px solid #29b078}
+    }
+
+
+}

@@ -1,0 +1,22 @@
+.bg-形状_7_拷贝_5 {
+    宽度：32px; 身高：30px;
+    background：url（'css_sprites.png'） -  10px -10px;
+}
+
+X
+.bg-矢量智能对象3 {
+    宽度：25px; 身高：24px;
+    background：url（'css_sprites.png'） -  62px -10px;
+}
+
+X
+.bg-矢量智能对象4 {
+    宽度：25px; 身高：24px;
+    background：url（'css_sprites.png'） -  10px -60px;
+}
+
+X
+.bg-矢量智能对象5 {
+    宽度：25px; 身高：24px;
+    background：url（'css_sprites.png'） -  55px -60px;
+}

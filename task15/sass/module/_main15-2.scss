@@ -1,0 +1,153 @@
+main {
+    .line-top {
+
+        @include bo-bo (18px);
+
+        >span {
+            color: #1cb176;
+        }
+    }
+
+    .direction {
+
+        @include bo-bo (18px);
+
+        >span {
+            font-size: 15px;
+            color: #acacac;
+        }
+
+        a {
+            margin: 0 20px;
+            color: #000000;
+        }
+    }
+
+    .exploit {
+        @include bo-bo (25px);
+    }
+
+    .table-margin {
+        margin: 20px 0;
+        background-color: #fff;
+        width: 100%;
+        table-layout: fixed;
+        position: relative;
+
+        .tadle-1 {
+
+            tr:nth-child(1) {
+                td:nth-child(1) {
+                    width: 85px;
+                    padding: 5px;
+                }
+
+                td:nth-child(2) {
+                    font-size: 17px;
+                    font-weight: bold;
+                }
+            }
+
+            tr:nth-child(2) {
+                td {
+                    font-size: 8px;
+                    padding-right: 10px;
+                }
+            }
+
+        }
+
+        .tadle-2 {
+            width: 100%;
+            table-layout: fixed;
+            font-size: 7px;
+
+            img {
+                margin: 0 0 2px 8px;
+            }
+
+            td {
+                height: 33px;
+                border-top: 1px solid #dedede;
+
+                span:nth-child(1) {
+                    color: #999999;
+                }
+            }
+
+            td:nth-child(1) {
+                border-right: 1px solid #dedede;
+            }
+
+        }
+
+        .tadle-3 {
+            tr:nth-child(1) {
+                td:nth-child(1) {
+                    border-right: 1px solid #dedede;
+                    width: 104px;
+                    height: 104px;
+                    text-align: center;
+                    color: #999999;
+                }
+            }
+
+            .td-flex {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding-top: 9px;
+            }
+
+            td {
+                border-top: 1px solid #dedede;
+            }
+
+            tr:last-child {
+                color: #999999;
+            }
+
+        }
+
+
+
+
+    }
+
+    .effect {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.65);
+        opacity: 0;
+        transition: 1s;
+
+        p:nth-child(1) {
+            margin: 1.5em;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        p:nth-child(2) {
+            margin: 15px;
+            font-size: 15px;
+        }
+
+
+
+    }
+
+
+   }
+
+
+@keyframes rotation {
+    0% {
+        transform: rotatey(0deg)
+    }
+
+    100% {
+        transform: rotatey(360deg)
+    }
+}

@@ -1,0 +1,157 @@
+/* #页眉 */
+header {
+    width: 100%;
+
+    .top {
+        width: 100%;
+        @include flex-jc-ai(space-between, center);
+
+        p {
+            font-size: 16px;
+            color: #29B078;
+            padding: 6px 0;
+            margin-left: 4%;
+        }
+
+
+        div {
+            @include flex-jc-ai(space-between, center);
+            margin-right: 4%;
+
+            i {
+                margin-right: 10px;
+            }
+
+            i:nth-child(1) {
+                @include icon(25px, 25px, -397px, -198px);
+            }
+
+            i:nth-child(2) {
+                @include icon(25px, 25px, -205px, -130px);
+            }
+
+            i:nth-child(3) {
+                @include icon(25px, 25px, -250px, -130px);
+            }
+        }
+
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+            // 换行显示
+        background-color: #29B078;
+        position: relative;
+        color: #fff;
+
+        .logo {
+            height: 60px;
+            margin-left: 4%;
+            display: inline-block;
+
+            span:nth-child(1) {
+                letter-spacing: 5px;
+                // 字符间距
+                font-size: 20px;
+                line-height: 33px;
+            }
+
+        }
+
+        .fold {
+            position: absolute;
+            top: 10px;
+            right: 8%;
+            width: 46px;
+            height: 40px;
+            border: 1px solid #fff;
+
+            span {
+                position: absolute;
+                top: 6px;
+                left: 4px;
+                width: 35px;
+                height: 26px;
+                padding: 10px 0;
+                border-top: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+                background: #fff content-box;
+
+            }
+
+        }
+
+        input:checked~.nav-relevance {
+            display: block;
+            background-color: #29B078;
+            animation: myfirst 1s;
+
+        }
+
+        .nav-relevance {
+            width: 100%;
+            line-height: 60px;           
+            display: none;
+                    
+
+            li {
+                width: 100%;
+                height: 60px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+
+                a {
+                    width: 30px;
+                    height: auto;
+                    color: #fff;
+                    font-size: 15px;
+
+                    &:hover {
+                        border-bottom: 2px solid #fff;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+}
+
+@keyframes myfirst {
+
+    0% {height:0;}
+
+    100% {height:240px;}
+
+}
+
+@media (min-width:768px) {
+    header {
+        .nav {
+            .fold {
+                display: none;
+            }
+
+            .nav-relevance {
+
+                display: flex;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 25%;
+
+            }
+
+            input:checked~.nav-relevance {
+                display: flex;
+                position: absolute;
+                right: 0;
+
+            }
+        }
+    }
+}

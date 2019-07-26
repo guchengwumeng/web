@@ -1,0 +1,11 @@
+@import  "./base/_mixins";
+// 重用混合器
+@import "./base/_reset";
+// css样式初始化
+@import "./layout/_header";
+// 头部样式
+@import "./module/_main15-1";
+@import "./layout/_footer";
+// 尾部样式
+@import "./vendors/bootstrap"
+// 自适应框架

@@ -1,0 +1,132 @@
+
+
+.bg-archive {
+    width: 60px; height: 48px;
+    background: url('css_sprites.png') -325px -130px;
+}
+
+
+.bg-rocket {
+    width: 43px; height: 62px;
+    background: url('css_sprites.png') -250px -180px;
+}
+
+
+.bg-Shape_253 {
+    width: 52px; height: 55px;
+    background: url('css_sprites.png') -325px -198px;
+}
+
+
+.bg-rere1 {
+    width: 100px; height: 100px;
+    background: url('css_sprites.png') -205px -10px;
+}
+
+
+.bg-uhuihjuyhu4 {
+    width: 100px; height: 100px;
+    background: url('css_sprites.png') -10px -180px;
+}
+
+
+.bg-yttrfrdf2 {
+    width: 100px; height: 100px;
+    background: url('css_sprites.png') -130px -180px;
+}
+
+
+.bg-ftft3 {
+    width: 100px; height: 100px;
+    background: url('css_sprites.png') -325px -10px;
+}
+
+
+.bg-iconm5 {
+    width: 92px; height: 92px;
+    background: url('css_sprites.png') -445px -118px;
+}
+
+
+.bg-877278 {
+    width: 15px; height: 15px;
+    background: url('css_sprites.png') -532px -230px;
+}
+
+
+.bg-矢量智能对象3 {
+    width: 25px; height: 24px;
+    background: url('css_sprites.png') -397px -198px;
+}
+
+
+.bg-矢量智能对象4 {
+    width: 25px; height: 24px;
+    background: url('css_sprites.png') -205px -130px;
+}
+
+
+.bg-矢量智能对象5 {
+    width: 25px; height: 24px;
+    background: url('css_sprites.png') -250px -130px;
+}
+
+
+.bg-user_拷贝 {
+    width: 13px; height: 13px;
+    background: url('css_sprites.png') -532px -265px;
+}
+
+
+.bg-形状_7_拷贝_5 {
+    width: 32px; height: 30px;
+    background: url('css_sprites.png') -518px -311px;
+}
+
+
+.bg-albb {
+    width: 106px; height: 88px;
+    background: url('css_sprites.png') -445px -10px;
+}
+
+
+.bg-one {
+    width: 67px; height: 61px;
+    background: url('css_sprites.png') -445px -230px;
+}
+
+
+.bg-jinshanyun {
+    width: 53px; height: 58px;
+    background: url('css_sprites.png') -445px -311px;
+}
+
+
+.bg-huanxin {
+    width: 134px; height: 69px;
+    background: url('css_sprites.png') -10px -300px;
+}
+
+
+.bg-oioiok {
+    width: 175px; height: 65px;
+    background: url('css_sprites.png') -10px -10px;
+}
+
+
+.bg-qianniu {
+    width: 175px; height: 65px;
+    background: url('css_sprites.png') -10px -95px;
+}
+
+
+.bg-bot {
+    width: 48px; height: 48px;
+    background: url('css_sprites.png') -164px -300px;
+}
+
+
+.bg-top {
+    width: 48px; height: 48px;
+    background: url('css_sprites.png') -232px -300px;
+}
