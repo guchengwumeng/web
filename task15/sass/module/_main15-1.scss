@@ -320,26 +320,6 @@ main {
     
     }
 }
-// @media (min-width: 992px){
-//     .cn{
-//         -webkit-box-flex: 0;
-//         -ms-flex: 0 0 19%;
-//             flex: 0 0 19%;
-//     max-width: 19%;
-//     }
-//     .cn{
-//         position: relative;
-//             width: 19%;
-//             min-height: 1px;
-//             padding: 0 15px;
-//     }
-
-
-// }
-
-
-
-
 
 
 
@@ -359,8 +339,8 @@ main {
 
     span {
         white-space:nowrap;
-       padding-bottom:4px;
-       &:hover {border-bottom:1px solid #29b078}
+        border-bottom:1px solid transparent;
+       &:hover {border-bottom:1px solid #29b078;}
     }
 
 

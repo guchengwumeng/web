@@ -440,6 +440,7 @@ footer .ally {
 footer .ally span {
   margin: 10px 0;
   padding-bottom: 5px;
+  border-bottom: 1px solid transparent;
 }
 
 footer .ally span:hover {
